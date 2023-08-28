@@ -1,50 +1,99 @@
 /* ----- CSS RESET ----- */
 body {
-    margin: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Mona Sans", sans-serif;
 }
 
 /* ----- VARIABLES ----- */
 :root {
-    --primaryBlack: #272727;
-    --primaryGreen: #D7FE62;
-    --primaryWhite: #FFFFFF;
-    --primaryOrange: #FF9454;
-    --primaryGrey: #D4D4D4;  
+  --primaryBlack: #272727;
+  --primaryGreen: #d7fe62;
+  --primaryWhite: #ffffff;
+  --primaryOrange: #ff9454;
+  --primaryGrey: #d4d4d4;
+}
+
+/* ----- FONTS ----- */
+@font-face {
+  font-family: "Mona Sans";
+  src: url("assets/fonts/Mona-Sans.woff2") format("woff2 supports variations"),
+    url("assets/fonts/Mona-Sans.woff2") format("woff2-variations");
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
 }
 
 /* ----- NAV / SIDEBAR ----- */
 .sideBar {
-    padding: 1rem 2rem 1rem 2rem;
-    width: 100%;
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    display: flex;
-    align-items: center;
-    background-color: var(--primaryBlack);
-    color: white;
+  padding: 1rem 2rem 1rem 2rem;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background-color: var(--primaryBlack);
+  color: white;
 }
 
 /* ----- CHAT UI ----- */
 .chatUI {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.chatHistory {
+  padding: 10rem 20rem;
 }
 
 /* ----- MSG INPUT ----- */
 .clientInput {
-    position: fixed;
-    display: flex;
-    width: 100%;
-    bottom: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  bottom: 0;
 }
 
 .clientInput_field {
-    width: 100%;
-    padding: 2rem;
-    background-color: var(--primaryBlack);
+  margin: 2rem 20rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primaryWhite);
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.clientInput_field input {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+}
+
+.clientInput_field button {
+  margin-right: 1rem;
+}
+
+.msgBtn {
+  background-color: var(--primaryWhite);
+  border: none;
+  cursor: pointer;
+}
+
+.msgBtn:hover {
+  opacity: 0.4;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.msgBtn_icon {
+  height: 20px;
+  width: 20px;
+  opacity: 0.8;
 }

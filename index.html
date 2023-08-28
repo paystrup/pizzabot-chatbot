@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="preload"
+      href="assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
     <title>ChatHans</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <main>
-        <nav class="sideBar">
-            <h2>Logo</h2>
-        </nav>
+      <nav class="sideBar">
+        <h2>ChatHans</h2>
+      </nav>
 
-        <section class="chatUI">
-            <section class="answers">
-                <h2>Answers will come here</h2>
-            </section>
-            <section class="clientInput">
-                <div class="clientInput_field">
-                    <input type="text">
-                    <button>Ask</button>
-                </div>
-            </section>
+      <section class="chatUI">
+        <section class="chatHistory">
+          <h2>Chat history</h2>
+          <div class="chatHistory_messages"></div>
         </section>
+        <section class="clientInput">
+          <div class="clientInput_field">
+            <input type="text" placeholder="Type something here..." />
+            <button class="msgBtn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="msgBtn_icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </section>
+      </section>
 
-        <footer>
-
-        </footer>
-
+      <footer></footer>
     </main>
-</body>
+  </body>
 </html>
