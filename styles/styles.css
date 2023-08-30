@@ -33,11 +33,33 @@ html {
 }
 
 /* ---------- BUTTONS ---------- */
-.greenBtn {
+.greenBtnOutline {
   background-color: transparent;
   background-color: var(--primaryBlack);
   border: 1px solid var(--primaryGreen);
   color: var(--primaryGreen);
+  border-radius: var(--borderRadiusBtn);
+  font-family: "Mona-Sans Medium Wide", sans-serif;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.whiteBtnOutline {
+  background-color: transparent;
+  background-color: var(--primaryBlack);
+  border: 1px solid var(--primaryWhite);
+  color: var(--primaryWhite);
+  border-radius: var(--borderRadiusBtn);
+  font-family: "Mona-Sans Medium Wide", sans-serif;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.whiteBtnSolid {
+  background-color: var(--primaryWhite);
+  background-color: var(--primaryWhite);
+  border: none;
+  color: var(--primaryBlack);
   border-radius: var(--borderRadiusBtn);
   font-family: "Mona-Sans Medium Wide", sans-serif;
   padding: 0.5rem;
@@ -109,6 +131,11 @@ html {
   align-items: center;
   gap: 0.3rem;
   width: 100%;
+}
+
+.sideBar_actions_hideSidebarBtn svg {
+  width: 20px;
+  height: 20px;
 }
 
 .sideBar_actions .plusIcon {
