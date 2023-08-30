@@ -1,10 +1,19 @@
-/* ----- FONTS ----- */
+/* ---------- FONTS ----------      */
 @import "fonts.css";
 
-/* ----- CSS RESET ----- */
+/* ---------- CSS RESET ----------  */
 @import "reset.css";
 
-/* ----- VARIABLES ----- */
+/* ---------- ANIMATIONS ---------  */  
+@import "animations.css";
+
+/* ---------- OTHER UTILS --------  */
+@import "utils.css";
+
+/* ---------- CUSTOM SCROLLBAR ---- */
+@import "scrollbar.css";
+
+/* ---------- VARIABLES ----------- */
 :root {
   --primaryBlack: #272727;
   --primaryLightBlack: #3d3d3d;
@@ -13,47 +22,41 @@
   --primaryOrange: #ff9454;
   --primaryGrey: #d4d4d4;
   --primarySans: "Mona Sans", sans-serif;
+  --borderRadiusBtn: 5px;
 }
 
+/* ---------- DEFAULT VALUES ---------- */
 html {
   font-family: "Mona-Sans Light Wide", sans-serif;
   background-color: var(--primaryWhite);
+  color: var(--primaryBlack);
 }
 
-/* BASIC GLOBAL HOVER ANIMATIONS */
-.fadeIn:hover {
-  opacity: 0.3;
-  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.fadeIn2:hover {
-  opacity: 0.7;
-  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-/* BUTTONS */
+/* ---------- BUTTONS ---------- */
 .greenBtn {
   background-color: transparent;
   background-color: var(--primaryBlack);
   border: 1px solid var(--primaryGreen);
   color: var(--primaryGreen);
-  border-radius: 5px;
+  border-radius: var(--borderRadiusBtn);
   font-family: "Mona-Sans Medium Wide", sans-serif;
   padding: 0.5rem;
   cursor: pointer;
 }
 
-/* ----- CHAT UI ----- */
+/* ---------- CHAT UI ---------- */
 .chatUI {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
+  padding-bottom: 3rem;
 }
 
-/* ----- NAV / SIDEBAR ----- */
+/* ---------- NAV / SIDEBAR ---------- */
 .sideBar {
-  width: 200px;
+  z-index: 999;
+  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -64,7 +67,7 @@ html {
   left: 0;
   bottom: 0;
   background-color: var(--primaryBlack);
-  color: white;
+  color: var(--primaryWhite);
 }
 
 .sideBar_top {
@@ -87,6 +90,11 @@ html {
 
 .sideBar_logo_emphasizedText {
   font-family: "Mona-Sans Bold Wide", sans-serif;
+}
+
+.sidebarIcon {
+  width: 15px;
+  height: 15px;
 }
 
 .sideBar_actions {
@@ -112,12 +120,56 @@ html {
   padding-top: 4rem;
 }
 
-.sideBar_chatHistory p {
-  font-size: 0.8rem;
+.sideBar_chatHistory_list {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  overflow-y: scroll;
 }
 
-.sideBar_chatHistory hr {
-  opacity: 0.5;
+.sideBar_chatHistory_msg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--borderRadiusBtn);
+  padding: 0.8rem 0.5rem 1rem 0.8rem;
+  font-family: "Mona-Sans Regular", sans-serif;
+  background-color: transparent;
+  color: var(--primaryWhite);
+  border: none;
+  cursor: pointer;
+}
+
+.sideBar_chatHistory_msg.active {
+  background-color: #676767;
+}
+
+.sideBar_chatHistory_msg.active:hover {
+  background-color: #3d3d3d;
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.sideBar_chatHistory_msg:hover {
+  background-color: #3d3d3d;
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.sideBar_chatHistory_msg_text {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.sideBar_chatHistory_msg svg {
+  width: 18px;
+  height: 18px;
+  color: #9b9b9b;
+}
+
+.sideBar_chatHistory_heading p {
+  opacity: 0.7;
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 .sideBar_profile {
@@ -160,37 +212,39 @@ html {
   opacity: 0.5;
 }
 
-/* CHAT HISTORY */
+/* ---------- CHAT HISTORY ---------- */
 .chatHistory_heading {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 400px 1rem 600px;
+  padding: 1rem 300px 1rem 600px;
   background-color: var(--primaryGreen);
 }
 
-.chatBubble {
-  padding: 2.5rem 400px 2.5rem 600px;
+.chat {
+  padding: 2rem 300px 2rem 600px;
   display: flex;
   gap: 1rem;
-  border: 1px solid #272727;
-  background-color: var(--primaryLightBlack);
-  color: var(--primaryWhite);
 }
 
-.chatBubble_img {
+.chat.chat_user {
+  justify-content: end;
+  flex-direction: row-reverse;
+}
+
+.chat_img {
   display: flex;
   align-items: flex-end;
   border-radius: 100%;
 }
 
-.chatBubble img {
+.chat img {
   width: 35px;
   height: 35px;
   border-radius: 100%;
 }
 
-.chatBubble_msgInfo {
+.chat_msgInfo {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -198,33 +252,39 @@ html {
   font-size: 0.9rem;
 }
 
-.chatBubble_msgInfo_name {
+.chat_msgInfo_name {
   font-family: "Mona-Sans Medium Wide", sans-serif;
 }
 
-.chatBubble_msgInfo_time {
+.chat_msgInfo_time {
   opacity: 0.7;
 }
 
-.chatBubble_msgText {
+.chat_bubble {
   display: flex;
   align-items: flex-start;
   background-color: var(--primaryGreen);
   color: var(--primaryBlack);
   padding: 1rem 1rem;
   border-radius: 10px;
-  font-family: "Mona-Sans Regular Wide", sans-serif;
+  font-family: "Mona-Sans Regular", sans-serif;
+  line-height: 160%;
 }
 
-/* ----- MSG INPUT ----- */
+.chat.chat_user .chat_bubble {
+  background-color: var(--primaryBlack);
+  color: var(--primaryWhite);
+}
+
+/* ---------- MSG USER INPUT ---------- */
 .clientInput {
   position: sticky;
   align-items: center;
   left: 0;
-  bottom: 0;
-  margin-bottom: 2rem;
+  bottom: 20px;
   padding-left: 600px;
-  padding-right: 400px;
+  padding-right: 300px;
+  z-index: 10;
 }
 
 .clientInput_field {
@@ -238,13 +298,14 @@ html {
 
 .clientInput_field input {
   width: 100%;
-  padding: 1rem;
+  padding: 1.5rem;
   border: none;
   border-radius: 8px;
+  font-family: "Mona-Sans Regular", sans-serif;
 }
 
 .clientInput_field button {
-  margin-right: 0.5rem;
+  margin-right: 1.5rem;
 }
 
 .msgBtn {
@@ -257,4 +318,15 @@ html {
   height: 20px;
   width: 20px;
   opacity: 0.8;
+}
+
+/* ---------- CHAT OVERLAY ---------- */
+.chat_bottom_overlay {
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 15vh;
+  width: 100%;
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 }

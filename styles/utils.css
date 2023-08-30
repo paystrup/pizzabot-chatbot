@@ -1,0 +1,9 @@
+/* 🪄 All util classes are collected here 🪄 */
+
+/* TRUNCATION */
+.truncate_short {
+    max-width: 25ch;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }

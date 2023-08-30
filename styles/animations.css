@@ -1,0 +1,10 @@
+/* 🪄 All general animation classes are collected here 🪄 */
+.fadeIn:hover {
+    opacity: 0.3;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  
+  .fadeIn2:hover {
+    opacity: 0.7;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
