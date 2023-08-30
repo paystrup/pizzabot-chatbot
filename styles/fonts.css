@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Regular"),
-    url("assets/fonts/Mona-Sans-Regular.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Regular Narrow"),
-    url("assets/fonts/Mona-Sans-RegularNarrow.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-RegularNarrow.woff") format("woff");
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Regular Wide"),
-    url("assets/fonts/Mona-Sans-RegularWide.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-RegularWide.woff") format("woff");
 }
 
 @font-face {
@@ -27,7 +27,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Regular Italic"),
-    url("assets/fonts/Mona-Sans-RegularItalic.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-RegularItalic.woff") format("woff");
 }
 
 @font-face {
@@ -35,7 +35,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Regular Narrow Italic"),
-    url("assets/fonts/Mona-Sans-RegularNarrowItalic.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-RegularNarrowItalic.woff") format("woff");
 }
 
 @font-face {
@@ -43,7 +43,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Regular Wide Italic"),
-    url("assets/fonts/Mona-Sans-RegularWideItalic.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-RegularWideItalic.woff") format("woff");
 }
 
 @font-face {
@@ -51,7 +51,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans UltraLight"),
-    url("assets/fonts/Mona-Sans-UltraLight.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-UltraLight.woff") format("woff");
 }
 
 @font-face {
@@ -59,7 +59,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans UltraLight Narrow"),
-    url("assets/fonts/Mona-Sans-UltraLightNarrow.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-UltraLightNarrow.woff") format("woff");
 }
 
 @font-face {
@@ -67,7 +67,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans UltraLight Wide"),
-    url("assets/fonts/Mona-Sans-UltraLightWide.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-UltraLightWide.woff") format("woff");
 }
 
 @font-face {
@@ -75,7 +75,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans UltraLight Italic"),
-    url("assets/fonts/Mona-Sans-UltraLightItalic.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-UltraLightItalic.woff") format("woff");
 }
 
 @font-face {
@@ -83,7 +83,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans UltraLight Narrow Italic"),
-    url("assets/fonts/Mona-Sans-UltraLightNarrowItalic.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-UltraLightNarrowItalic.woff") format("woff");
 }
 
 @font-face {
@@ -91,7 +91,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans UltraLight Wide Italic"),
-    url("assets/fonts/Mona-Sans-UltraLightWideItalic.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-UltraLightWideItalic.woff") format("woff");
 }
 
 @font-face {
@@ -99,7 +99,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Light"),
-    url("assets/fonts/Mona-Sans-Light.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-Light.woff") format("woff");
 }
 
 @font-face {
@@ -107,7 +107,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Light Narrow"),
-    url("assets/fonts/Mona-Sans-LightNarrow.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-LightNarrow.woff") format("woff");
 }
 
 @font-face {
@@ -115,7 +115,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Light Wide"),
-    url("assets/fonts/Mona-Sans-LightWide.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-LightWide.woff") format("woff");
 }
 
 @font-face {
@@ -123,7 +123,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Light Italic"),
-    url("assets/fonts/Mona-Sans-LightItalic.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-LightItalic.woff") format("woff");
 }
 
 @font-face {
@@ -131,7 +131,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Light Narrow Italic"),
-    url("assets/fonts/Mona-Sans-LightNarrowItalic.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-LightNarrowItalic.woff") format("woff");
 }
 
 @font-face {
@@ -139,7 +139,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Light Wide Italic"),
-    url("assets/fonts/Mona-Sans-LightWideItalic.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-LightWideItalic.woff") format("woff");
 }
 
 @font-face {
@@ -147,7 +147,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Medium"),
-    url("assets/fonts/Mona-Sans-Medium.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-Medium.woff") format("woff");
 }
 
 @font-face {
@@ -155,7 +155,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Medium Narrow"),
-    url("assets/fonts/Mona-Sans-MediumNarrow.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-MediumNarrow.woff") format("woff");
 }
 
 @font-face {
@@ -163,7 +163,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Medium Wide"),
-    url("assets/fonts/Mona-Sans-MediumWide.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-MediumWide.woff") format("woff");
 }
 
 @font-face {
@@ -171,7 +171,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Medium Italic"),
-    url("assets/fonts/Mona-Sans-MediumItalic.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-MediumItalic.woff") format("woff");
 }
 
 @font-face {
@@ -179,7 +179,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Medium Narrow Italic"),
-    url("assets/fonts/Mona-Sans-MediumNarrowItalic.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-MediumNarrowItalic.woff") format("woff");
 }
 
 @font-face {
@@ -187,7 +187,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Medium Wide Italic"),
-    url("assets/fonts/Mona-Sans-MediumWideItalic.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-MediumWideItalic.woff") format("woff");
 }
 
 @font-face {
@@ -195,7 +195,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans SemiBold"),
-    url("assets/fonts/Mona-Sans-SemiBold.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-SemiBold.woff") format("woff");
 }
 
 @font-face {
@@ -203,7 +203,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans SemiBold Narrow"),
-    url("assets/fonts/Mona-Sans-SemiBoldNarrow.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-SemiBoldNarrow.woff") format("woff");
 }
 
 @font-face {
@@ -211,7 +211,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans SemiBold Wide"),
-    url("assets/fonts/Mona-Sans-SemiBoldWide.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-SemiBoldWide.woff") format("woff");
 }
 
 @font-face {
@@ -219,7 +219,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans SemiBold Italic"),
-    url("assets/fonts/Mona-Sans-SemiBoldItalic.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-SemiBoldItalic.woff") format("woff");
 }
 
 @font-face {
@@ -227,7 +227,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans SemiBold Narrow Italic"),
-    url("assets/fonts/Mona-Sans-SemiBoldNarrowItalic.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-SemiBoldNarrowItalic.woff") format("woff");
 }
 
 @font-face {
@@ -235,7 +235,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans SemiBold Wide Italic"),
-    url("assets/fonts/Mona-Sans-SemiBoldWideItalic.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-SemiBoldWideItalic.woff") format("woff");
 }
 
 @font-face {
@@ -243,7 +243,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Bold"),
-    url("assets/fonts/Mona-Sans-Bold.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -251,7 +251,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Bold Narrow"),
-    url("assets/fonts/Mona-Sans-BoldNarrow.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-BoldNarrow.woff") format("woff");
 }
 
 @font-face {
@@ -259,7 +259,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Bold Wide"),
-    url("assets/fonts/Mona-Sans-BoldWide.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-BoldWide.woff") format("woff");
 }
 
 @font-face {
@@ -267,7 +267,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Bold Italic"),
-    url("assets/fonts/Mona-Sans-BoldItalic.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-BoldItalic.woff") format("woff");
 }
 
 @font-face {
@@ -275,7 +275,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Bold Narrow Italic"),
-    url("assets/fonts/Mona-Sans-BoldNarrowItalic.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-BoldNarrowItalic.woff") format("woff");
 }
 
 @font-face {
@@ -283,7 +283,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Bold Wide Italic"),
-    url("assets/fonts/Mona-Sans-BoldWideItalic.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-BoldWideItalic.woff") format("woff");
 }
 
 @font-face {
@@ -291,7 +291,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans ExtraBold"),
-    url("assets/fonts/Mona-Sans-ExtraBold.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-ExtraBold.woff") format("woff");
 }
 
 @font-face {
@@ -299,7 +299,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans ExtraBold Narrow"),
-    url("assets/fonts/Mona-Sans-ExtraBoldNarrow.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-ExtraBoldNarrow.woff") format("woff");
 }
 
 @font-face {
@@ -307,7 +307,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans ExtraBold Wide"),
-    url("assets/fonts/Mona-Sans-ExtraBoldWide.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-ExtraBoldWide.woff") format("woff");
 }
 
 @font-face {
@@ -315,7 +315,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans ExtraBold Italic"),
-    url("assets/fonts/Mona-Sans-ExtraBoldItalic.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-ExtraBoldItalic.woff") format("woff");
 }
 
 @font-face {
@@ -323,7 +323,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans ExtraBold Narrow Italic"),
-    url("assets/fonts/Mona-Sans-ExtraBoldNarrowItalic.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-ExtraBoldNarrowItalic.woff") format("woff");
 }
 
 @font-face {
@@ -331,7 +331,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans ExtraBold Wide Italic"),
-    url("assets/fonts/Mona-Sans-ExtraBoldWideItalic.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-ExtraBoldWideItalic.woff") format("woff");
 }
 
 @font-face {
@@ -339,7 +339,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Black"),
-    url("assets/fonts/Mona-Sans-Black.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-Black.woff") format("woff");
 }
 
 @font-face {
@@ -347,7 +347,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Black Narrow"),
-    url("assets/fonts/Mona-Sans-BlackNarrow.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-BlackNarrow.woff") format("woff");
 }
 
 @font-face {
@@ -355,7 +355,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Black Wide"),
-    url("assets/fonts/Mona-Sans-BlackWide.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-BlackWide.woff") format("woff");
 }
 
 @font-face {
@@ -363,7 +363,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Black Italic"),
-    url("assets/fonts/Mona-Sans-BlackItalic.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-BlackItalic.woff") format("woff");
 }
 
 @font-face {
@@ -371,7 +371,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Black Narrow Italic"),
-    url("assets/fonts/Mona-Sans-BlackNarrowItalic.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-BlackNarrowItalic.woff") format("woff");
 }
 
 @font-face {
@@ -379,7 +379,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona-Sans Black Wide Italic"),
-    url("assets/fonts/Mona-Sans-BlackWideItalic.woff") format("woff");
+    url("../assets/fonts/Mona-Sans-BlackWideItalic.woff") format("woff");
 }
 
 @font-face {
@@ -387,5 +387,5 @@
   font-style: normal;
   font-weight: normal;
   src: local("Mona Sans Thin"),
-    url("assets/fonts/Mona-Sans.woff") format("woff");
+    url("../assets/fonts/Mona-Sans.woff") format("woff");
 }
