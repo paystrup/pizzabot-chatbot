@@ -21,6 +21,7 @@
   --primaryWhite: #ffffff;
   --primaryOrange: #ff9454;
   --primaryGrey: #d4d4d4;
+  --primaryLightGrey: #e5e5e5;
   --primarySans: "Mona Sans", sans-serif;
   --primarySansWideLight: "Mona-Sans Light Wide", sans-serif;
   --primarySansWideMedium: "Mona-Sans Medium Wide", sans-serif;
@@ -272,6 +273,15 @@ button {
   border-radius: 100%;
 }
 
+.chat.chatSkeleton .chat_img {
+  display: flex;
+  align-self: flex-end;
+  border-radius: 100%;
+  width: var(--largeIconSize);
+  height: var(--largeIconSize);
+  background-color: var(--primaryLightGrey);
+}
+
 .chat img {
   width: var(--largeIconSize);
   height: var(--largeIconSize);
@@ -303,6 +313,12 @@ button {
   border-radius: 10px;
   font-family: var(--primarySansRegular);
   line-height: 160%;
+  min-width: 100px;
+}
+
+.chat.chatSkeleton .chat_bubble {
+  background-color: var(--primaryLightGrey);
+  color: var(--primaryLightBlack);
 }
 
 .chat.chat_user .chat_bubble {
