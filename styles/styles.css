@@ -141,6 +141,12 @@ button {
   width: 100%;
 }
 
+.sideBar_actions_hideSidebarBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .sideBar_actions_hideSidebarBtn svg {
   width: var(--mediumIconSize);
   height: var(--mediumIconSize);
