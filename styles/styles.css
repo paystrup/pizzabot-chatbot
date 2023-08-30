@@ -22,26 +22,36 @@
   --primaryOrange: #ff9454;
   --primaryGrey: #d4d4d4;
   --primarySans: "Mona Sans", sans-serif;
+  --primarySansWideLight: "Mona-Sans Light Wide", sans-serif;
+  --primarySansWideMedium: "Mona-Sans Medium Wide", sans-serif;
+  --primarySansWideBold: "Mona-Sans Bold Wide", sans-serif;
+  --primarySansRegular: "Mona-Sans Regular", sans-serif;
   --borderRadiusBtn: 5px;
+  --smallIconSize: 15px;
+  --mediumIconSize: 20px;
+  --largeIconSize: 35px;
 }
 
 /* ---------- DEFAULT VALUES ---------- */
 html {
-  font-family: "Mona-Sans Light Wide", sans-serif;
+  font-family: var(--primarySansWideLight);
   background-color: var(--primaryWhite);
   color: var(--primaryBlack);
 }
 
 /* ---------- BUTTONS ---------- */
+button {
+  cursor: pointer;
+}
+
 .greenBtnOutline {
   background-color: transparent;
   background-color: var(--primaryBlack);
   border: 1px solid var(--primaryGreen);
   color: var(--primaryGreen);
   border-radius: var(--borderRadiusBtn);
-  font-family: "Mona-Sans Medium Wide", sans-serif;
+  font-family: var(--primarySansWideMedium);
   padding: 0.5rem;
-  cursor: pointer;
 }
 
 .whiteBtnOutline {
@@ -50,9 +60,8 @@ html {
   border: 1px solid var(--primaryWhite);
   color: var(--primaryWhite);
   border-radius: var(--borderRadiusBtn);
-  font-family: "Mona-Sans Medium Wide", sans-serif;
+  font-family: var(--primarySansWideMedium);
   padding: 0.5rem;
-  cursor: pointer;
 }
 
 .whiteBtnSolid {
@@ -61,9 +70,8 @@ html {
   border: none;
   color: var(--primaryBlack);
   border-radius: var(--borderRadiusBtn);
-  font-family: "Mona-Sans Medium Wide", sans-serif;
+  font-family: var(--primarySansWideMedium);
   padding: 0.5rem;
-  cursor: pointer;
 }
 
 /* ---------- CHAT UI ---------- */
@@ -78,18 +86,17 @@ html {
 /* ---------- NAV / SIDEBAR ---------- */
 .sideBar {
   z-index: 999;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  color: #fff;
-  padding: 1rem;
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
-  background-color: var(--primaryBlack);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   color: var(--primaryWhite);
+  background-color: var(--primaryBlack);
+  padding: 1rem;
 }
 
 .sideBar_top {
@@ -111,12 +118,12 @@ html {
 }
 
 .sideBar_logo_emphasizedText {
-  font-family: "Mona-Sans Bold Wide", sans-serif;
+  font-family: var(--primarySansWideBold);
 }
 
 .sidebarIcon {
-  width: 15px;
-  height: 15px;
+  width: var(--smallIconSize);
+  height: var(--smallIconSize);
 }
 
 .sideBar_actions {
@@ -134,13 +141,13 @@ html {
 }
 
 .sideBar_actions_hideSidebarBtn svg {
-  width: 20px;
-  height: 20px;
+  width: var(--mediumIconSize);
+  height: var(--mediumIconSize);
 }
 
 .sideBar_actions .plusIcon {
-  width: 15px;
-  height: 15px;
+  width: var(--smallIconSize);
+  height: var(--smallIconSize);
 }
 
 .sideBar_chatHistory {
@@ -160,7 +167,7 @@ html {
   align-items: center;
   border-radius: var(--borderRadiusBtn);
   padding: 0.8rem 0.5rem 1rem 0.8rem;
-  font-family: "Mona-Sans Regular", sans-serif;
+  font-family: var(--primarySansRegular);
   background-color: transparent;
   color: var(--primaryWhite);
   border: none;
@@ -216,13 +223,13 @@ html {
 }
 
 .sideBar_profile_info p {
-  font-family: "Mona-Sans Medium Wide", sans-serif;
+  font-family: var(--primarySansWideMedium);
   font-size: 0.9rem;
 }
 
 .sideBar_profile .sideBar_profile_info img {
-  width: 35px;
-  height: 35px;
+  width: var(--largeIconSize);
+  height: var(--largeIconSize);
   border-radius: 5px;
 }
 
@@ -234,8 +241,8 @@ html {
 }
 
 .sideBar_profile .dotIcon {
-  width: 20px;
-  height: 20px;
+  width: var(--mediumIconSize);
+  height: var(--mediumIconSize);
   opacity: 0.5;
 }
 
@@ -266,8 +273,8 @@ html {
 }
 
 .chat img {
-  width: 35px;
-  height: 35px;
+  width: var(--largeIconSize);
+  height: var(--largeIconSize);
   border-radius: 100%;
 }
 
@@ -280,7 +287,7 @@ html {
 }
 
 .chat_msgInfo_name {
-  font-family: "Mona-Sans Medium Wide", sans-serif;
+  font-family: var(--primarySansWideMedium);
 }
 
 .chat_msgInfo_time {
@@ -294,7 +301,7 @@ html {
   color: var(--primaryBlack);
   padding: 1rem 1rem;
   border-radius: 10px;
-  font-family: "Mona-Sans Regular", sans-serif;
+  font-family: var(--primarySansRegular);
   line-height: 160%;
 }
 
@@ -328,7 +335,7 @@ html {
   padding: 1.5rem;
   border: none;
   border-radius: 8px;
-  font-family: "Mona-Sans Regular", sans-serif;
+  font-family: var(--primarySansRegular);
 }
 
 .clientInput_field button {
@@ -342,8 +349,8 @@ html {
 }
 
 .msgBtn_icon {
-  height: 20px;
-  width: 20px;
+  height: var(--mediumIconSize);
+  width: var(--mediumIconSize);
   opacity: 0.8;
 }
 
