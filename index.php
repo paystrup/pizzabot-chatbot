@@ -1,3 +1,9 @@
+<?php 
+  session_start();
+  $userName = "rudyf";
+  $botName = "chathans";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -214,7 +220,11 @@
               src="assets/images/profile_placeholder.jpg"
               alt="Profile Picture"
             />
-            <p>rudyfred</p>
+            <p>
+              <?php 
+                echo $userName;
+              ?>
+            </p>
           </div>
 
           <button class="sideBar_profile_settingsBtn fadeIn">
@@ -242,69 +252,20 @@
 
           <!-- CHAT UI - HEADING / BANNER CONTAINING QUERY / QUESTION -->
           <div class="chatHistory_heading">
-            <h3>Your query/question here</h3>
+            <?php 
+              // Check if chat history is set and contains questions
+              if (isset($_SESSION['chat_history'])) {
+                echo "<h3>" . $_SESSION['chat_history'][0] . "</h3>";
+              } else {
+                echo "<h3>". "Start asking questions" . "</h3>";
+              };
+            ?>
           </div>
 
           <!-- ALL MESSAGES -->
           <div class="chatHistory_messages">
-            <div class="chat chat_user">
-              <div class="chat_img">
-                <img
-                  src="assets/images/profile_placeholder.jpg"
-                  alt="Profile Picture"
-                />
-              </div>
-
-              <div class="chat_msg">
-                <div class="chat_msgInfo">
-                  <p class="chat_msgInfo_name">rudyfred</p>
-                  <p class="chat_msgInfo_time">12:34</p>
-                </div>
-                <div class="chat_bubble">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="chat">
-              <div class="chat_img">
-                <img
-                  src="assets/images/robotIcon.png"
-                  alt="Profile Picture"
-                />
-              </div>
-
-              <div class="chat_msg">
-                <div class="chat_msgInfo">
-                  <p class="chat_msgInfo_name">chathans</p>
-                  <p class="chat_msgInfo_time">12:34</p>
-                </div>
-                <div class="chat_bubble">
-                  <p>This is a very clever answer</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="chat chat_user">
-              <div class="chat_img">
-                <img
-                  src="assets/images/profile_placeholder.jpg"
-                  alt="Profile Picture"
-                />
-              </div>
-
-              <div class="chat_msg">
-                <div class="chat_msgInfo">
-                  <p class="chat_msgInfo_name">rudyfred</p>
-                  <p class="chat_msgInfo_time">12:34</p>
-                </div>
-                <div class="chat_bubble">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="chat chatSkeleton">
+            <!-- SKELETON MSG -->
+            <!-- <div class="chat chatSkeleton">
               <div class="chat_img skeletonLoad"></div>
               <div class="chat_msg">
                 <div class="chat_msgInfo">
@@ -314,8 +275,39 @@
                   <p>...</p>
                 </div>
               </div>
-            </div>
+            </div> -->
+           
+            <?php
+              if (isset($_SESSION['chat_history'])) {
+                $is_question = true; // Initialize as a question
+                foreach ($_SESSION['chat_history'] as $message) {
+                    // Determine if the message is a question or an answer
+                    $message_classes = $is_question ? 'chat chat_user' : 'chat';
+          
+                    // Define the image source based on the message type
+                    $image_src = $is_question ? 'assets/images/profile_placeholder.jpg' : 'assets/images/robotIcon.png';
 
+                    // You can create a template for the chat message and insert the message content
+                    echo '<div class="' . $message_classes . '">
+                            <div class="chat_img">
+                              <img src="' . $image_src . '" alt="Profile Picture" />
+                            </div>
+                            <div class="chat_msg">
+                              <div class="chat_msgInfo">
+                                <p class="chat_msgInfo_name">' . ($is_question ? $userName : $botName) . '</p>
+                                <p class="chat_msgInfo_time">' . date('H:i') . '</p>
+                              </div>
+                              <div class="chat_bubble">
+                                <p>' . $message . '</p>
+                              </div>
+                            </div>
+                          </div>';
+                    $is_question = !$is_question; // Toggle between question and answer
+                } 
+              } else {
+                echo "<div class='chat'>" . "<p>" . "Welcome. Ask me a question. I'm robot." . "</p>" . "</div>";
+              };
+            ?>
           </div>
         </section>
       </section>
@@ -323,23 +315,25 @@
       <!-- ASK QUESTION INPUT - CLIENT -->
       <section class="clientInput">
         <div class="clientInput_field">
-          <input tabindex="1" type="text" placeholder="Type something here..." />
-          <button tabindex="2" class="msgBtn fadeIn">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="msgBtn_icon"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
-              />
-            </svg>
-          </button>
+          <form action="chatbot.php" method="POST">
+            <input tabindex="1" type="text" name="question" placeholder="Type something here..." />
+            <input type="submit" tabindex="2" class="msgBtn fadeIn">
+              <!-- <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="msgBtn_icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
+                />
+              </svg> -->
+            </input>
+          </form>
         </div>
       </section>
 
