@@ -31,23 +31,25 @@
 
           <!-- SIDEBAR ACTIONS -->
           <div class="sideBar_actions">
-            <button tabindex="3" class="sideBar_actions_newChatBtn greenBtnOutline fadeIn2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="plusIcon"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M12 4.5v15m7.5-7.5h-15"
-                />
-              </svg>
-              New chat
-            </button>
+            <form action="deleteChats.php" method="POST">
+              <button tabindex="3" class="sideBar_actions_newChatBtn greenBtnOutline fadeIn2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="plusIcon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 4.5v15m7.5-7.5h-15"
+                  />
+                </svg>
+                New chat
+              </button>
+            </form>
             
             <button tabindex="4" class="sideBar_actions_hideSidebarBtn whiteBtnOutline fadeIn2">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="eyeIcon">
@@ -252,10 +254,11 @@
 
           <!-- CHAT UI - HEADING / BANNER CONTAINING QUERY / QUESTION -->
           <div class="chatHistory_heading">
+            <p id="charCount" class="charCount">0</p>
             <?php 
               // Check if chat history is set and contains questions
               if (isset($_SESSION['chat_history'])) {
-                echo "<h3>" . $_SESSION['chat_history'][0] . "</h3>";
+                echo "<h3>" . "Your question: " . $_SESSION['chat_history'][0] . "</h3>";
               } else {
                 echo "<h3>". "Start asking questions" . "</h3>";
               };
@@ -316,9 +319,9 @@
       <section class="clientInput">
         <div class="clientInput_field">
           <form action="chatbot.php" method="POST">
-            <input tabindex="1" type="text" name="question" placeholder="Type something here..." />
-            <input type="submit" tabindex="2" class="msgBtn fadeIn">
-              <!-- <svg
+            <input id="inputField" class="question" tabindex="1" type="text" name="question" required pattern=".*\S.*" placeholder="Ask me a question ..." />
+            <button type="submit" value="" tabindex="2" class="msgBtn fadeIn">
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -331,13 +334,13 @@
                   stroke-linejoin="round"
                   d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
                 />
-              </svg> -->
-            </input>
+              </svg>
+            </button>
           </form>
         </div>
       </section>
 
-      <!-- 
+      <!--  
           BG OVERLAY OVER CHAT FOR BETTER UX -> VISIBILITY ON THE CHAT HISTORY WHILE SCROLLING
           z-index places it on top for easy fixed access, this makes it more readable, indicates scrolling too...
       -->
@@ -347,4 +350,5 @@
       <!-- <footer></footer> -->
     </main>
   </body>
+  <script src="scripts/charCount.js"></script>
 </html>
