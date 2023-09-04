@@ -22,6 +22,7 @@
   --primaryOrange: #ff9454;
   --primaryGrey: #d4d4d4;
   --primaryLightGrey: #e5e5e5;
+  --primaryLighterGrey: #f7f7f7;
   --primarySans: "Mona Sans", sans-serif;
   --primarySansWideLight: "Mona-Sans Light Wide", sans-serif;
   --primarySansWideMedium: "Mona-Sans Medium Wide", sans-serif;
@@ -333,8 +334,8 @@ button {
 }
 
 .chat.chat_user .chat_bubble {
-  background-color: var(--primaryBlack);
-  color: var(--primaryWhite);
+  background-color: var(--primaryLighterGrey);
+  color: var(--primaryLightBlack);
 }
 
 /* ---------- MSG USER INPUT ---------- */
@@ -365,20 +366,32 @@ button {
   font-family: var(--primarySansRegular);
 }
 
-.clientInput_field button {
-  margin-right: 1.5rem;
+.clientInput_field_box {
+  display: flex;
+  align-items: center;
 }
 
-.msgBtn {
-  background-color: var(--primaryWhite);
+.clientInput_field button {
+  padding: 0rem 5rem 0rem 5rem;
+  background-color: var(--primaryBlack);
   border: none;
   cursor: pointer;
+  height: 100%;
+  border-radius: var(--borderRadiusBtn);
 }
 
 .msgBtn svg {
   height: var(--mediumIconSize);
   width: var(--mediumIconSize);
+  color: var(--primaryWhite);
   opacity: 0.8;
+}
+
+.charCount {
+  padding: 0 0 0 2rem;
+  font-family: var(--primarySansWideLight);
+  font-size: 0.7rem;
+  width: 5rem;
 }
 
 /* ---------- CHAT OVERLAY ---------- */
