@@ -15,6 +15,7 @@
     <meta name="author" content="Nikolaj Pejstrup">
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <script src="scripts/scrollToBottom.js"></script>
   </head>
   <body>
     <main>

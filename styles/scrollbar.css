@@ -1,6 +1,6 @@
 /* Firefox */
 * {
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
     scrollbar-width: auto;
     scrollbar-color: #393939 #d7d7d7;
   }
