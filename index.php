@@ -1,5 +1,6 @@
 <?php 
   session_start();
+  $siteName = "ChatHans | Your chatbot";
   $userName = "rudyf";
   $botName = "chathans";
 ?>
@@ -9,7 +10,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ChatHans | Chatbot</title>
+    <title>
+      <?php 
+        echo $siteName;
+      ?>
+    </title>
     <meta name="description" content="A very clever chatbot made with PHP, CSS, HTML ...">
     <meta name="keywords" content="chatbot, AI, robots, chathans, PHP, HTML, CSS, JavaScript">
     <meta name="author" content="Nikolaj Pejstrup">
@@ -317,12 +322,12 @@
 
       <!-- ASK QUESTION INPUT - CLIENT -->
       <section class="clientInput">
+        <p id="charCount" class="charCount"></p>
         <div class="clientInput_field">
           <form action="chatbot.php" method="POST">
             <input id="inputField" class="question" tabindex="1" type="text" name="question" required pattern=".*\S.*" placeholder="Ask me a question ..."/>
             
             <div class="clientInput_field_box">
-              <p id="charCount" class="charCount"></p>
               <button type="submit" value="" tabindex="2" class="msgBtn fadeIn">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
