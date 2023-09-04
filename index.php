@@ -255,7 +255,6 @@
 
           <!-- CHAT UI - HEADING / BANNER CONTAINING QUERY / QUESTION -->
           <div class="chatHistory_heading">
-            <p id="charCount" class="charCount">0</p>
             <?php 
               // Check if chat history is set and contains questions
               if (isset($_SESSION['chat_history'])) {
@@ -320,23 +319,27 @@
       <section class="clientInput">
         <div class="clientInput_field">
           <form action="chatbot.php" method="POST">
-            <input id="inputField" class="question" tabindex="1" type="text" name="question" required pattern=".*\S.*" placeholder="Ask me a question ..." />
-            <button type="submit" value="" tabindex="2" class="msgBtn fadeIn">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="msgBtn_icon"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
-                />
-              </svg>
-            </button>
+            <input id="inputField" class="question" tabindex="1" type="text" name="question" required pattern=".*\S.*" placeholder="Ask me a question ..."/>
+            
+            <div class="clientInput_field_box">
+              <p id="charCount" class="charCount"></p>
+              <button type="submit" value="" tabindex="2" class="msgBtn fadeIn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="msgBtn_icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"
+                  />
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </section>
