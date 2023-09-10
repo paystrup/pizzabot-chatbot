@@ -263,9 +263,9 @@
             <?php 
               // Check if chat history is set and contains questions
               if (isset($_SESSION['chat_history'])) {
-                echo "<h3>" . "Your question: " . $_SESSION['chat_history'][0] . "</h3>";
+                echo "<h3>" . "Your question: " . $_SESSION['chat_history'][0]['question'] . "</h3>";
               } else {
-                echo "<h3>". "Start asking questions" . "</h3>";
+                echo "<h3>". "Ask a question" . "</h3>";
               };
             ?>
           </div>
@@ -287,30 +287,39 @@
            
             <?php
               if (isset($_SESSION['chat_history'])) {
-                $is_question = true; // Initialize as a question
-                foreach ($_SESSION['chat_history'] as $message) {
-                    // Determine if the message is a question or an answer
-                    $message_classes = $is_question ? 'chat chat_user' : 'chat';
-          
-                    // Define the image source based on the message type
-                    $image_src = $is_question ? 'assets/images/profile_placeholder.jpg' : 'assets/images/robotIcon.png';
+                foreach ($_SESSION['chat_history'] as $chat_entry) {
+                    $img_src_user = 'assets/images/profile_placeholder.jpg';
+                    $img_src_bot = 'assets/images/robotIcon.png';
 
-                    // You can create a template for the chat message and insert the message content
-                    echo '<div class="' . $message_classes . '">
+                    echo '<div class="chat chat_user">
                             <div class="chat_img">
-                              <img src="' . $image_src . '" alt="Profile Picture" />
+                              <img src="' . $img_src_user . '" alt="Profile Picture" />
                             </div>
                             <div class="chat_msg">
                               <div class="chat_msgInfo">
-                                <p class="chat_msgInfo_name">' . ($is_question ? $userName : $botName) . '</p>
-                                <p class="chat_msgInfo_time">' . date('H:i') . '</p>
+                                <p class="chat_msgInfo_name">' . $userName . '</p>
+                                <p class="chat_msgInfo_time">' . $chat_entry['timestamp'] . '</p>
                               </div>
                               <div class="chat_bubble">
-                                <p>' . $message . '</p>
+                                <p>' . $chat_entry['question'] . '</p>
                               </div>
                             </div>
                           </div>';
-                    $is_question = !$is_question; // Toggle between question and answer
+
+                    echo '<div class="chat">
+                            <div class="chat_img">
+                              <img src="' . $img_src_bot . '" alt="Profile Picture" />
+                            </div>
+                            <div class="chat_msg">
+                              <div class="chat_msgInfo">
+                                <p class="chat_msgInfo_name">' . $botName . '</p>
+                                <p class="chat_msgInfo_time">' . $chat_entry['timestamp'] . '</p>
+                              </div>
+                              <div class="chat_bubble">
+                                <p>' . $chat_entry['answer'] . '</p>
+                              </div>
+                            </div>
+                          </div>';
                 } 
               } else {
                 echo "<div class='chat'>" . "<p>" . "Welcome. Ask me a question. I'm robot." . "</p>" . "</div>";

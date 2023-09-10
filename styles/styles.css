@@ -4,7 +4,7 @@
 /* ---------- CSS RESET ----------  */
 @import "reset.css";
 
-/* ---------- ANIMATIONS ---------  */  
+/* ---------- ANIMATIONS ---------  */
 @import "animations.css";
 
 /* ---------- OTHER UTILS --------  */
@@ -22,7 +22,7 @@
   --primaryOrange: #ff9454;
   --primaryGrey: #d4d4d4;
   --primaryLightGrey: #e5e5e5;
-  --primaryLighterGrey: #f7f7f7;
+  --primaryLighterGrey: #ececec;
   --primarySans: "Mona Sans", sans-serif;
   --primarySansWideLight: "Mona-Sans Light Wide", sans-serif;
   --primarySansWideMedium: "Mona-Sans Medium Wide", sans-serif;
@@ -401,5 +401,9 @@ button {
   left: 0;
   height: 20vh;
   width: 100%;
-  background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
