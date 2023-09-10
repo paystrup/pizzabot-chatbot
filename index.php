@@ -1,8 +1,6 @@
 <?php 
   session_start();
-  $siteName = "ChatHans | Your chatbot";
-  $userName = "rudyf";
-  $botName = "chathans";
+  include('siteVariables.php');
 ?>
 
 <!DOCTYPE html>
