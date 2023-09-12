@@ -1,0 +1,171 @@
+[
+  {
+    "id": "1",
+    "question": "Hi",
+    "answer": "Hello! How can I assist you today?",
+    "keywords": [
+      "greeting",
+      "hi",
+      "hello",
+      "hey",
+      "howdy",
+      "hola",
+      "bonjour",
+      "ciao",
+      "yo"
+    ]
+  },
+  {
+    "id": "2",
+    "question": "How are you?",
+    "answer": "I'm just a chatbot, so I don't have feelings, but I'm here to help. What can I do for you?",
+    "keywords": ["greeting", "how are you"]
+  },
+  {
+    "id": "3",
+    "question": "Who are you?",
+    "answer": "I'm a pizza-loving chatbot. Ask me anything about pizza or anything else you'd like to know!",
+    "keywords": ["introduction", "who are you"]
+  },
+  {
+    "id": "4",
+    "question": "What is your favorite pizza?",
+    "answer": "I love a good Neapolitan Beep Beep Pizza Diavola with rusty screws!",
+    "keywords": ["favorite pizza", "robot pizza"]
+  },
+  {
+    "id": "5",
+    "question": "What are the main ingredients of a classic Margherita pizza?",
+    "answer": "A classic Margherita pizza typically consists of tomato sauce, fresh mozzarella cheese, fresh basil leaves, olive oil, and a thin crust.",
+    "keywords": [
+      "Margherita pizza",
+      "ingredients",
+      "tomato sauce",
+      "mozzarella cheese",
+      "basil",
+      "thin crust"
+    ]
+  },
+  {
+    "id": "6",
+    "question": "Where did pizza originate?",
+    "answer": "Pizza is believed to have originated in Naples, Italy, in the 18th century.",
+    "keywords": ["pizza", "origin", "Naples", "Italy"]
+  },
+  {
+    "id": "7",
+    "question": "What is the difference between Neapolitan and New York-style pizza?",
+    "answer": "Neapolitan pizza is thin-crusted with minimal toppings, while New York-style pizza has a larger, foldable slice with more toppings and a chewier crust.",
+    "keywords": [
+      "Neapolitan pizza",
+      "New York-style pizza",
+      "crust",
+      "toppings"
+    ]
+  },
+  {
+    "id": "8",
+    "question": "What is a calzone?",
+    "answer": "A calzone is a folded pizza that resembles a turnover or a stuffed pizza pocket. It typically contains ingredients similar to those of a pizza, such as cheese, sauce, and various fillings.",
+    "keywords": ["calzone", "folded pizza", "fillings"]
+  },
+  {
+    "id": "9",
+    "question": "What's the most popular pizza topping in the United States?",
+    "answer": "Pepperoni is the most popular pizza topping in the United States, followed closely by sausage and mushrooms.",
+    "keywords": [
+      "pizza topping",
+      "pepperoni",
+      "sausage",
+      "mushrooms",
+      "United States"
+    ]
+  },
+  {
+    "id": "10",
+    "question": "Did you know that the first pizzeria in the United States opened in what city and year?",
+    "answer": "Yes, the first pizzeria in the United States opened in New York City in 1905. It was called Lombardi's.",
+    "keywords": [
+      "first pizzeria",
+      "United States",
+      "New York City",
+      "Lombardi's",
+      "1905"
+    ]
+  },
+  {
+    "id": "11",
+    "question": "What is the world record for the largest pizza ever made?",
+    "answer": "The largest pizza ever made weighed over 26,000 pounds and was created in 2012 in Italy.",
+    "keywords": ["largest pizza", "world record", "Italy", "2012"]
+  },
+  {
+    "id": "12",
+    "question": "What is the name of the traditional wood-fired pizza oven used in Italy?",
+    "answer": "The traditional wood-fired pizza oven used in Italy is called a 'Forno a Legna.'",
+    "keywords": ["wood-fired pizza oven", "Italy", "Forno a Legna"]
+  },
+  {
+    "id": "13",
+    "question": "Which Italian city is known for its pizza with a thick, fluffy crust and rich toppings?",
+    "answer": "Naples, Italy, is famous for its pizza with a thick, fluffy crust and rich toppings. It's often called 'Pizza Napoletana.'",
+    "keywords": ["Pizza Napoletana", "Naples", "thick crust"]
+  },
+  {
+    "id": "14",
+    "question": "What is 'pizza Margherita' named after?",
+    "answer": "Pizza Margherita is named after Queen Margherita of Italy. It was created in her honor and features the colors of the Italian flag with tomatoes, mozzarella, and basil.",
+    "keywords": ["pizza Margherita", "Queen Margherita", "Italian flag"]
+  },
+  {
+    "id": "15",
+    "question": "When did the first pizzeria open in Naples, Italy?",
+    "answer": "The first pizzeria in Naples, Italy, is believed to have opened in the late 18th century, around 1738. It was named 'Antica Pizzeria Port'Alba.'",
+    "keywords": [
+      "first pizzeria",
+      "Naples",
+      "Antica Pizzeria Port'Alba",
+      "18th century"
+    ]
+  },
+  {
+    "id": "16",
+    "question": "What type of flour is typically used in authentic Neapolitan pizza dough?",
+    "answer": "Authentic Neapolitan pizza dough is made with '00' flour, a finely ground Italian flour that results in a soft and elastic dough.",
+    "keywords": ["Neapolitan pizza dough", "'00' flour", "authentic"]
+  },
+  {
+    "id": "17",
+    "question": "What is the traditional Italian pizza topping known as 'prosciutto e funghi'?",
+    "answer": "Prosciutto e funghi is a traditional Italian pizza topping that includes prosciutto (dry-cured ham) and mushrooms.",
+    "keywords": [
+      "prosciutto e funghi",
+      "Italian pizza topping",
+      "prosciutto",
+      "mushrooms"
+    ]
+  },
+  {
+    "id": "18",
+    "question": "Which Italian region is famous for its unique pizza called 'Pizza al Taglio'?",
+    "answer": "Rome, Italy, is famous for 'Pizza al Taglio,' a rectangular pizza with a variety of toppings that's cut into slices and sold by weight.",
+    "keywords": ["Pizza al Taglio", "Rome", "rectangular pizza", "unique pizza"]
+  },
+  {
+    "id": "19",
+    "question": "What is the Italian word for pizza maker or pizza chef?",
+    "answer": "The Italian word for a pizza maker or pizza chef is 'pizzaiolo' (singular) or 'pizzaioli' (plural).",
+    "keywords": ["Italian word", "pizza maker", "pizzaiolo"]
+  },
+  {
+    "id": "20",
+    "question": "Which famous Italian pizza chef is often credited with popularizing Neapolitan-style pizza in the United States?",
+    "answer": "Famous Italian pizza chef, Roberto Caporuscio, is often credited with popularizing Neapolitan-style pizza in the United States through his pizzeria, Kesté Pizza & Vino.",
+    "keywords": [
+      "Roberto Caporuscio",
+      "Neapolitan-style pizza",
+      "United States",
+      "Kesté Pizza & Vino"
+    ]
+  }
+]
