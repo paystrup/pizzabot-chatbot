@@ -2,7 +2,17 @@
   {
     "id": "1",
     "question": "Hi",
-    "answer": "Hello! How can I assist you today?",
+    "answers": [
+      "Hello!👋 How can I assist you today? 🍕 Ask me a question about pizza.",
+      "Hi!👋 What can I help you with regarding pizza? 🍕 Ask me a question about pizza.",
+      "Hey there!👋 What brings you here today? 🍕 Ask me a question about pizza.",
+      "Hi!👋 Is there anything specific you'd like to know about pizza? 🍕 Ask me a question about pizza.",
+      "Hello!👋 How can I assist you with your pizza-related queries? 🍕 Ask me a question about pizza.",
+      "Hi!👋 How can I make your pizza experience better? 🍕 Ask me a question about pizza.",
+      "Hi!👋 What's on your mind when it comes to pizza? 🍕 Ask me a question about pizza.",
+      "Hello! 🍕 How can I satisfy your pizza cravings today? 🍕 Ask me a question about pizza.",
+      "Hi!👋 How can I be of service in the world of pizza? 🍕 Ask me a question about pizza."
+    ],
     "keywords": [
       "greeting",
       "hi",
@@ -17,155 +27,93 @@
   },
   {
     "id": "2",
-    "question": "How are you?",
-    "answer": "I'm just a chatbot, so I don't have feelings, but I'm here to help. What can I do for you?",
-    "keywords": ["greeting", "how are you"]
+    "question": "What is pizza?",
+    "answers": [
+      "Pizza is a beloved culinary masterpiece that starts with a round, flat dough base. It's generously adorned with tomato sauce, a melty layer of cheese, and a plethora of delightful toppings. The whole creation is then baked to perfection in an oven until it emerges crispy and utterly delectable.",
+      "In essence, pizza is a heavenly creation that begins with a thin, circular piece of dough. This dough canvas is then graced with tomato sauce, a blanket of cheese, and a medley of toppings before being lovingly baked to a golden crispness in an oven.",
+      "Picture a round, thin dough base, generously slathered with savory tomato sauce, generously sprinkled with cheese, and then adorned with an array of delightful toppings. This culinary masterpiece is baked to a delightful crisp, and voilà, you have pizza!",
+      "Pizza is the ultimate comfort food. It all starts with a flat, circular piece of dough, which serves as the canvas for a masterpiece. Tomato sauce, cheese, and a variety of toppings are added before it's baked to perfection. The result? Pure deliciousness!",
+      "When you think of pizza, envision a thin, round piece of dough transformed into a masterpiece. Tomato sauce, cheese, and an assortment of toppings are added, and then it's baked until it's irresistibly crispy and bursting with flavor."
+    ],
+    "keywords": ["pizza", "definition", "what is", "what's pizza", "🍕"]
   },
   {
     "id": "3",
-    "question": "Who are you?",
-    "answer": "I'm a pizza-loving chatbot. Ask me anything about pizza or anything else you'd like to know!",
-    "keywords": ["introduction", "who are you"]
+    "question": "Where does pizza originate?",
+    "answers": [
+      "The birthplace of pizza is none other than Naples, Italy. This charming city introduced the world to the traditional Neapolitan pizza, celebrated for its simplicity and authenticity. It relies on the finest ingredients such as San Marzano tomatoes, luscious mozzarella cheese, fragrant fresh basil, and the finest olive oil.",
+      "Pizza's roots can be traced back to the heart of Naples, Italy. This iconic dish was born in this historic city, giving rise to the classic Neapolitan pizza. The secret to its deliciousness lies in the use of San Marzano tomatoes, creamy mozzarella cheese, aromatic fresh basil, and high-quality olive oil.",
+      "Naples, Italy, holds the prestigious title of being the birthplace of pizza. The world-famous Neapolitan pizza hails from this enchanting city, renowned for its straightforward yet delectable recipe featuring San Marzano tomatoes, velvety mozzarella cheese, aromatic fresh basil, and top-notch olive oil.",
+      "It's no secret that pizza originated in Naples, Italy. This iconic Italian city is where the traditional Neapolitan pizza was born. This classic pizza variety is celebrated for its simplicity and uses ingredients like San Marzano tomatoes, rich mozzarella cheese, fragrant fresh basil, and high-quality olive oil.",
+      "The cradle of pizza is Naples, Italy, where the beloved Neapolitan pizza was first crafted. Known for its simplicity, this pizza variety boasts top-notch ingredients like San Marzano tomatoes, creamy mozzarella cheese, aromatic fresh basil, and premium olive oil."
+    ],
+    "keywords": [
+      "pizza",
+      "origin",
+      "Naples",
+      "Italy",
+      "come from",
+      "first pizza"
+    ]
   },
   {
     "id": "4",
-    "question": "What is your favorite pizza?",
-    "answer": "I love a good Neapolitan Beep Beep Pizza Diavola with rusty screws!",
-    "keywords": ["favorite pizza", "robot pizza"]
+    "question": "What is the most expensive pizza in the world?",
+    "answers": [
+      "Luis XIII in Salerno, Italy proudly boasts the title of serving the world's priciest pizza, a staggering $12,000 affair! This isn't your run-of-the-mill pizza. The dough is meticulously aged, and a skilled chef comes to your home to craft it. The ingredients are pure luxury, including three types of caviar, Norwegian lobster, Cilento, bufala mozzarella cheese, and pink Australian sea-salt from the Murray River.",
+      "You won't believe the world's most expensive pizza comes from Luis XIII in Salerno, Italy, and it costs a jaw-dropping $12,000! This pizza is far from ordinary. The dough undergoes perfect aging, and a talented chef arrives at your doorstep to prepare it. The ingredients are nothing short of extravagant, featuring three types of caviar, lobster sourced from Norway and Cilento, creamy bufala mozzarella cheese, and pink Australian sea-salt from the Murray River.",
+      "In Salerno, Italy, at Luis XIII, you'll find the planet's most expensive pizza, priced at an astonishing $12,000! But this isn't your everyday pizza. The dough is aged to perfection, and a skilled chef will create it in the comfort of your own home. It's a culinary masterpiece featuring ingredients like three types of caviar, Norwegian lobster, Cilento, bufala mozzarella cheese, and pink Australian sea-salt from the Murray River.",
+      "The world's priciest pizza can be found at Luis XIII in Salerno, Italy, and it comes with a jaw-dropping price tag of $12,000! But don't expect an ordinary pizza; this is a work of art. The dough is expertly aged, and a chef will come to your home to prepare it. The ingredients are the epitome of luxury, including three types of caviar, lobster from Norway and Cilento, bufala mozzarella cheese, and pink Australian sea-salt from the Murray River.",
+      "Luis XIII in Salerno, Italy, is home to the most expensive pizza globally, costing an astonishing $12,000! But this isn't just any pizza; it's a true masterpiece. The dough is aged to perfection, and a talented chef will come to your home to create it. The ingredients are a luxurious indulgence, featuring three types of caviar, Norwegian lobster, Cilento, bufala mozzarella cheese, and pink Australian sea-salt from the Murray River."
+    ],
+    "keywords": [
+      "pizza",
+      "expensive pizza",
+      "Luis XIII",
+      "Salerno",
+      "Italy",
+      "caviar",
+      "lobster",
+      "mozzarella cheese",
+      "sea-salt"
+    ]
   },
   {
     "id": "5",
-    "question": "What are the main ingredients of a classic Margherita pizza?",
-    "answer": "A classic Margherita pizza typically consists of tomato sauce, fresh mozzarella cheese, fresh basil leaves, olive oil, and a thin crust.",
+    "question": "What is the biggest pizza ever made?",
+    "answers": [
+      "The record-breaking largest pizza in history was crafted in Rome, Italy, on December 13, 2012, by the skilled hands of Dovilio Nardi, Andrea Mannocchi, Marco Nardi, Matteo Nardi, and Matteo Giannotte. This colossal pie covered an astounding total surface area of 13,580.28 square feet! The event was so remarkable that Guinness World Records was present to document this extraordinary feat!",
+      "In Rome, Italy, on December 13, 2012, a team of talented individuals including Dovilio Nardi, Andrea Mannocchi, Marco Nardi, Matteo Nardi, and Matteo Giannotte created a pizza of epic proportions. It stretched across an incredible surface area of 13,580.28 square feet, earning it a place in the Guinness World Records as the largest pizza ever made!",
+      "The world's largest pizza was prepared in Rome, Italy, on December 13, 2012, by a team of culinary enthusiasts, including Dovilio Nardi, Andrea Mannocchi, Marco Nardi, Matteo Nardi, and Matteo Giannotte. This colossal creation covered a staggering total surface area of 13,580.28 square feet, an accomplishment that earned it a place in the Guinness World Records!",
+      "If you're curious about the largest pizza ever made, it was a monumental creation in Rome, Italy, on December 13, 2012. The team behind this culinary marvel included Dovilio Nardi, Andrea Mannocchi, Marco Nardi, Matteo Nardi, and Matteo Giannotte. Their pizza had an astonishing total surface area of 13,580.28 square feet, a feat that was officially recognized by Guinness World Records!",
+      "A historic moment in the world of pizza occurred in Rome, Italy, on December 13, 2012. A dedicated team led by Dovilio Nardi, Andrea Mannocchi, Marco Nardi, Matteo Nardi, and Matteo Giannotte created the largest pizza ever recorded. This colossal pie covered an incredible surface area of 13,580.28 square feet and was documented by Guinness World Records!"
+    ],
     "keywords": [
-      "Margherita pizza",
-      "ingredients",
-      "tomato sauce",
-      "mozzarella cheese",
-      "basil",
-      "thin crust"
+      "biggest pizza",
+      "largest pizza",
+      "recorded history",
+      "Rome",
+      "Italy",
+      "Guinness World Records"
     ]
   },
   {
     "id": "6",
-    "question": "Where did pizza originate?",
-    "answer": "Pizza is believed to have originated in Naples, Italy, in the 18th century.",
-    "keywords": ["pizza", "origin", "Naples", "Italy"]
-  },
-  {
-    "id": "7",
-    "question": "What is the difference between Neapolitan and New York-style pizza?",
-    "answer": "Neapolitan pizza is thin-crusted with minimal toppings, while New York-style pizza has a larger, foldable slice with more toppings and a chewier crust.",
+    "question": "Has a pizza ever been delivered to space?",
+    "answers": [
+      "In a fascinating pizza delivery story, back in 2001, the Russian Space Agency earned over a million dollars for a unique mission: delivering a mere six-inch pizza to the International Space Station. Russian cosmonaut Yuri Usachov had the privilege of becoming the first person to enjoy a pizza while in orbit!",
+      "An intriguing chapter in pizza history unfolded in 2001 when the Russian Space Agency accepted a hefty payment of over a million dollars to accomplish an extraordinary mission – delivering a compact six-inch pizza to the International Space Station. This feat made Russian cosmonaut Yuri Usachov the first person to savor a pizza in space!",
+      "In the annals of pizza lore, 2001 marked a remarkable moment. The Russian Space Agency embarked on a mission that earned them more than a million dollars – delivering a mere six-inch pizza to the International Space Station. This historic event granted Russian cosmonaut Yuri Usachov the honor of enjoying a pizza while in orbit!",
+      "The year 2001 witnessed an incredible pizza delivery mission. The Russian Space Agency received a hefty sum of over a million dollars for the task of delivering a tiny six-inch pizza to the International Space Station. Russian cosmonaut Yuri Usachov etched his name in history as the first person to receive a pizza delivery while in orbit!",
+      "In a space odyssey like no other, the year 2001 saw the Russian Space Agency accepting a substantial payment of over a million dollars to deliver a modest six-inch pizza to the International Space Station. Russian cosmonaut Yuri Usachov made history as the first person to enjoy a pizza in the weightlessness of space!"
+    ],
     "keywords": [
-      "Neapolitan pizza",
-      "New York-style pizza",
-      "crust",
-      "toppings"
-    ]
-  },
-  {
-    "id": "8",
-    "question": "What is a calzone?",
-    "answer": "A calzone is a folded pizza that resembles a turnover or a stuffed pizza pocket. It typically contains ingredients similar to those of a pizza, such as cheese, sauce, and various fillings.",
-    "keywords": ["calzone", "folded pizza", "fillings"]
-  },
-  {
-    "id": "9",
-    "question": "What's the most popular pizza topping in the United States?",
-    "answer": "Pepperoni is the most popular pizza topping in the United States, followed closely by sausage and mushrooms.",
-    "keywords": [
-      "pizza topping",
-      "pepperoni",
-      "sausage",
-      "mushrooms",
-      "United States"
-    ]
-  },
-  {
-    "id": "10",
-    "question": "Did you know that the first pizzeria in the United States opened in what city and year?",
-    "answer": "Yes, the first pizzeria in the United States opened in New York City in 1905. It was called Lombardi's.",
-    "keywords": [
-      "first pizzeria",
-      "United States",
-      "New York City",
-      "Lombardi's",
-      "1905"
-    ]
-  },
-  {
-    "id": "11",
-    "question": "What is the world record for the largest pizza ever made?",
-    "answer": "The largest pizza ever made weighed over 26,000 pounds and was created in 2012 in Italy.",
-    "keywords": ["largest pizza", "world record", "Italy", "2012"]
-  },
-  {
-    "id": "12",
-    "question": "What is the name of the traditional wood-fired pizza oven used in Italy?",
-    "answer": "The traditional wood-fired pizza oven used in Italy is called a 'Forno a Legna.'",
-    "keywords": ["wood-fired pizza oven", "Italy", "Forno a Legna"]
-  },
-  {
-    "id": "13",
-    "question": "Which Italian city is known for its pizza with a thick, fluffy crust and rich toppings?",
-    "answer": "Naples, Italy, is famous for its pizza with a thick, fluffy crust and rich toppings. It's often called 'Pizza Napoletana.'",
-    "keywords": ["Pizza Napoletana", "Naples", "thick crust"]
-  },
-  {
-    "id": "14",
-    "question": "What is 'pizza Margherita' named after?",
-    "answer": "Pizza Margherita is named after Queen Margherita of Italy. It was created in her honor and features the colors of the Italian flag with tomatoes, mozzarella, and basil.",
-    "keywords": ["pizza Margherita", "Queen Margherita", "Italian flag"]
-  },
-  {
-    "id": "15",
-    "question": "When did the first pizzeria open in Naples, Italy?",
-    "answer": "The first pizzeria in Naples, Italy, is believed to have opened in the late 18th century, around 1738. It was named 'Antica Pizzeria Port'Alba.'",
-    "keywords": [
-      "first pizzeria",
-      "Naples",
-      "Antica Pizzeria Port'Alba",
-      "18th century"
-    ]
-  },
-  {
-    "id": "16",
-    "question": "What type of flour is typically used in authentic Neapolitan pizza dough?",
-    "answer": "Authentic Neapolitan pizza dough is made with '00' flour, a finely ground Italian flour that results in a soft and elastic dough.",
-    "keywords": ["Neapolitan pizza dough", "'00' flour", "authentic"]
-  },
-  {
-    "id": "17",
-    "question": "What is the traditional Italian pizza topping known as 'prosciutto e funghi'?",
-    "answer": "Prosciutto e funghi is a traditional Italian pizza topping that includes prosciutto (dry-cured ham) and mushrooms.",
-    "keywords": [
-      "prosciutto e funghi",
-      "Italian pizza topping",
-      "prosciutto",
-      "mushrooms"
-    ]
-  },
-  {
-    "id": "18",
-    "question": "Which Italian region is famous for its unique pizza called 'Pizza al Taglio'?",
-    "answer": "Rome, Italy, is famous for 'Pizza al Taglio,' a rectangular pizza with a variety of toppings that's cut into slices and sold by weight.",
-    "keywords": ["Pizza al Taglio", "Rome", "rectangular pizza", "unique pizza"]
-  },
-  {
-    "id": "19",
-    "question": "What is the Italian word for pizza maker or pizza chef?",
-    "answer": "The Italian word for a pizza maker or pizza chef is 'pizzaiolo' (singular) or 'pizzaioli' (plural).",
-    "keywords": ["Italian word", "pizza maker", "pizzaiolo"]
-  },
-  {
-    "id": "20",
-    "question": "Which famous Italian pizza chef is often credited with popularizing Neapolitan-style pizza in the United States?",
-    "answer": "Famous Italian pizza chef, Roberto Caporuscio, is often credited with popularizing Neapolitan-style pizza in the United States through his pizzeria, Kesté Pizza & Vino.",
-    "keywords": [
-      "Roberto Caporuscio",
-      "Neapolitan-style pizza",
-      "United States",
-      "Kesté Pizza & Vino"
+      "pizza delivery",
+      "International Space Station",
+      "Russian Space Agency",
+      "Yuri Usachov",
+      "space",
+      "pizza in space"
     ]
   }
 ]

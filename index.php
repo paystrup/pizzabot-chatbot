@@ -18,7 +18,7 @@
     <meta name="author" content="Nikolaj Pejstrup">
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
-    <script src="scripts/scrollToBottom.js"></script>
+    <script type="module" src="scripts/scrollToBottom.js"></script>
   </head>
   <body>
     <main>
@@ -29,7 +29,7 @@
             <h2>
               🤖
               <br />
-              <span class="sideBar_logo_emphasizedText">chat</span>hans
+              <span class="sideBar_logo_emphasizedText"><?php echo $logoText1; ?></span><?php echo $logoText2; ?>
             </h2>
           </div>
 
@@ -258,71 +258,12 @@
 
           <!-- CHAT UI - HEADING / BANNER CONTAINING QUERY / QUESTION -->
           <div class="chatHistory_heading">
-            <?php 
-              // Check if chat history is set and contains questions
-              if (isset($_SESSION['chat_history'])) {
-                echo "<h3>" . "Your question: " . $_SESSION['chat_history'][0]['question'] . "</h3>";
-              } else {
-                echo "<h3>". "Ask a question" . "</h3>";
-              };
-            ?>
+              <p>Heading here</p>
           </div>
 
           <!-- ALL MESSAGES -->
           <div class="chatHistory_messages">
-            <!-- SKELETON MSG -->
-            <!-- <div class="chat chatSkeleton">
-              <div class="chat_img skeletonLoad"></div>
-              <div class="chat_msg">
-                <div class="chat_msgInfo">
-                  <p class="chat_msgInfo_name">chathans</p>
-                </div>
-                <div class="chat_bubble skeletonLoad">
-                  <p>...</p>
-                </div>
-              </div>
-            </div> -->
-           
-            <?php
-              if (isset($_SESSION['chat_history'])) {
-                foreach ($_SESSION['chat_history'] as $chat_entry) {
-                    $img_src_user = 'assets/images/profile_placeholder.jpg';
-                    $img_src_bot = 'assets/images/robotIcon.png';
-
-                    echo '<div class="chat chat_user">
-                            <div class="chat_img">
-                              <img src="' . $img_src_user . '" alt="Profile Picture" />
-                            </div>
-                            <div class="chat_msg">
-                              <div class="chat_msgInfo">
-                                <p class="chat_msgInfo_name">' . $userName . '</p>
-                                <p class="chat_msgInfo_time">' . $chat_entry['timestamp'] . '</p>
-                              </div>
-                              <div class="chat_bubble">
-                                <p>' . $chat_entry['question'] . '</p>
-                              </div>
-                            </div>
-                          </div>';
-
-                    echo '<div class="chat">
-                            <div class="chat_img">
-                              <img src="' . $img_src_bot . '" alt="Profile Picture" />
-                            </div>
-                            <div class="chat_msg">
-                              <div class="chat_msgInfo">
-                                <p class="chat_msgInfo_name">' . $botName . '</p>
-                                <p class="chat_msgInfo_time">' . $chat_entry['timestamp'] . '</p>
-                              </div>
-                              <div class="chat_bubble">
-                                <p>' . $chat_entry['answer'] . '</p>
-                              </div>
-                            </div>
-                          </div>';
-                } 
-              } else {
-                echo "<div class='chat'>" . "<p>" . "Welcome. Ask me a question. I'm robot." . "</p>" . "</div>";
-              };
-            ?>
+            <div id="chatOutput"></div>
           </div>
         </section>
       </section>
@@ -331,11 +272,11 @@
       <section class="clientInput">
         <p id="charCount" class="charCount"></p>
         <div class="clientInput_field">
-          <form action="chatbot.php" method="POST">
+          <form>
             <input id="inputField" class="question" tabindex="1" type="text" name="question" required pattern=".*\S.*" placeholder="Ask me a question ..."/>
             
             <div class="clientInput_field_box">
-              <button type="submit" value="" tabindex="2" class="msgBtn fadeIn">
+              <button id="askButton" type="submit" value="" tabindex="2" class="msgBtn fadeIn">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -353,6 +294,7 @@
               </button>
             </div>
           </form>
+        
         </div>
       </section>
 
@@ -365,6 +307,8 @@
       <!-- MAYBE ADDED LATER OR USED IN SIDEBAR ? -->
       <!-- <footer></footer> -->
     </main>
+
+    <script type="module" src="scripts/charCount.js"></script>
+    <script type="module" src="scripts/getAnswer.js"></script>
   </body>
-  <script src="scripts/charCount.js"></script>
 </html>

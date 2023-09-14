@@ -1,5 +1,7 @@
 <?php 
-    $siteName = "ChatHans | Your chatbot";
+    $siteName = "PizzaBot | Your pizza chatbot";
+    $logoText1 = "pizza";
+    $logoText2 = "bot";
     $userName = "rudyf";
-    $botName = "chathans";
+    $botName = "pizza.bot";
 ?>
