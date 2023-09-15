@@ -594,5 +594,213 @@
       "Mother Copenhagen",
       "Mother pizza"
     ]
+  },
+  {
+    "id": "33",
+    "question": "What is your favourite pizza?",
+    "answers": [
+      "I like pizza with beep beep boop boop.",
+      "I like robot chicken pizza.",
+      "I like motherboard pizza.",
+      "I prefer motor oil.",
+      "I like bytes and gigabytes more.",
+      "I'm not a human. I don't eat."
+    ],
+    "keywords": [
+      "robot favourite pizza",
+      "bot pizza",
+      "favourite pizza",
+      "do you eat pizza"
+    ]
+  },
+  {
+    "id": "34",
+    "question": "What is one of the best pizza in Rome?",
+    "answers": [
+      "One of the most esteemed pizzerias in Rome is 'Pizzarium Bonci.' Located in the heart of the city, 'Pizzarium Bonci' is celebrated for its innovative approach to pizza. Gabriele Bonci, the mastermind behind this pizzeria, is known for his creative toppings and dedication to quality. The pizza here is a delightful fusion of traditional Italian flavors and modern culinary artistry, making 'Pizzarium Bonci' a must-visit for pizza enthusiasts in Rome.",
+      "'Pizzarium Bonci' in Rome stands out as one of the city's top pizzerias. Renowned pizzaiolo Gabriele Bonci is the visionary behind this establishment, known for pushing the boundaries of traditional pizza. With a focus on creative toppings and a commitment to using high-quality ingredients, 'Pizzarium Bonci' offers a pizza experience that's a blend of classic Italian craftsmanship and contemporary culinary innovation.",
+      "'Pizzarium Bonci' is an iconic pizzeria in Rome that has earned its place among the best. Located in the bustling city center, this pizzeria is the brainchild of Gabriele Bonci, a renowned pizza artist. What sets 'Pizzarium Bonci' apart is its inventive approach to pizza, featuring unique and mouthwatering toppings. With an emphasis on using top-tier ingredients, it offers a pizza experience that harmonizes tradition with culinary creativity.",
+      "In the realm of Rome's best pizzerias, 'Pizzarium Bonci' holds a special spot. Gabriele Bonci, the visionary pizzaiolo behind this establishment, is celebrated for his culinary ingenuity. 'Pizzarium Bonci' is famous for its unconventional toppings and dedication to quality, creating a pizza that's a delightful fusion of tradition and innovation. When in Rome, a visit to 'Pizzarium Bonci' is a must for those seeking a unique pizza experience."
+    ],
+    "keywords": [
+      "best pizza in Rome",
+      "Pizzarium Bonci",
+      "creative pizza toppings",
+      "Italian pizza craftsmanship",
+      "Rome"
+    ]
+  },
+  {
+    "id": "35",
+    "question": "What are some of the best pizzerias in New York?",
+    "answers": [
+      "1. 'Lombardi's Pizza' in Manhattan stands as one of New York's oldest pizzerias, renowned for its classic coal-oven pizzas, which offer a taste of traditional New York-style pizza with a historic twist. 2. 'Di Fara Pizza' in Brooklyn has gained legendary status for its pizza craftsmanship, where Domenico DeMarco, the pizzaiolo, meticulously crafts each pie, making it an essential visit for pizza enthusiasts. 3. 'Joe's Pizza' in Greenwich Village holds a special place as a New York institution, celebrated for its straightforward yet delicious slices that capture the city's pizza culture essence. 4. 'Juliana's Pizza' in Brooklyn not only serves a slice of history but also offers breathtaking views of the Brooklyn Bridge. Their coal-fired pizzas harmoniously blend tradition with exceptional taste. 5. 'Prince Street Pizza' in Manhattan is renowned for its iconic pepperoni square slice, known as the 'Prince Perfection.' It's an absolute must-try for those seeking a distinctive pizza experience in the city.",
+      "1. 'Lombardi's Pizza' in Manhattan, one of New York's oldest pizzerias, is celebrated for its classic coal-oven pizzas that offer a nostalgic taste of traditional New York-style pizza. 2. 'Di Fara Pizza' in Brooklyn has achieved legendary status for its pizza craftsmanship, where Domenico DeMarco, the pizzaiolo, meticulously crafts each pie, making it a must-visit for pizza connoisseurs. 3. 'Joe's Pizza' in Greenwich Village is an iconic New York institution known for its no-frills yet delicious slices that perfectly encapsulate the city's pizza culture. 4. 'Juliana's Pizza' in Brooklyn not only serves up a slice of history but also provides stunning views of the Brooklyn Bridge. Their coal-fired pizzas effortlessly blend tradition with exceptional flavor. 5. 'Prince Street Pizza' in Manhattan is renowned for its iconic pepperoni square slice, known as the 'Prince Perfection.' It's a definite go-to for those seeking a unique pizza adventure in the city.",
+      "1. 'Lombardi's Pizza' in Manhattan, one of New York's longest-standing pizzerias, is renowned for its classic coal-oven pizzas, offering a taste of traditional New York-style pizza with a historical touch. 2. 'Di Fara Pizza' in Brooklyn is celebrated for its legendary pizza craftsmanship, where Domenico DeMarco, the master pizza maker, meticulously creates each pie, making it a must-visit for pizza aficionados. 3. 'Joe's Pizza' in Greenwich Village is a beloved New York institution, famous for its straightforward yet delectable slices that capture the essence of the city's pizza culture. 4. 'Juliana's Pizza' in Brooklyn not only serves a slice of history but also provides stunning views of the Brooklyn Bridge. Their coal-fired pizzas effortlessly blend tradition with exceptional flavor. 5. 'Prince Street Pizza' in Manhattan is renowned for its iconic pepperoni square slice, known as the 'Prince Perfection.' It's a definite go-to for those seeking a unique pizza adventure in the city."
+    ],
+    "keywords": [
+      "best pizzerias in New York",
+      "New York pizza",
+      "iconic pizzerias",
+      "New York-style pizza",
+      "legendary pizza places"
+    ]
+  },
+  {
+    "id": "36",
+    "question": "What is the best pizzeria in the world?",
+    "answers": [
+      "The title of the best pizzeria in the world is often awarded to 'Osteria Francescana' in Modena, Italy. While primarily known for its outstanding Italian cuisine, their pizza is exceptional. 'Osteria Francescana' has received numerous accolades and is celebrated for its innovative and high-quality pizza creations.",
+      "'Osteria Francescana' in Modena, Italy, is frequently hailed as the best pizzeria globally, although it's renowned for its broader Italian culinary expertise. Their pizzas are a testament to creativity and excellence, earning them a prestigious reputation in the world of pizza.",
+      "When it comes to the best pizzeria in the world, 'Osteria Francescana' in Modena, Italy, often takes the top spot. While their main focus is on traditional Italian cuisine, their pizzas are nothing short of extraordinary, combining innovation with exquisite flavors.",
+      "'Osteria Francescana' in Modena, Italy, is widely recognized as the world's best pizzeria. Though they are primarily known for their fine Italian dining, their pizzas are a testament to culinary artistry and have earned them the highest accolades."
+    ],
+    "keywords": [
+      "best pizzeria in the world",
+      "world's top pizzeria",
+      "Osteria Francescana",
+      "pizza excellence",
+      "best pizza",
+      "modena",
+      "global pizzeria ranking"
+    ]
+  },
+  {
+    "id": "37",
+    "question": "How to make an Italian pizza dough?",
+    "answers": [
+      "The best Italian pizza dough recipe with resting time requires high-quality ingredients: 500g of '00' flour, 325ml of lukewarm water, 10g of salt, 7g of active dry yeast, and a pinch of sugar. Mix and knead the ingredients, then let the dough rest for at least 8 hours. This resting period is essential for developing the dough's flavor and texture, making it perfect for crafting authentic Italian-style pizza crusts.",
+      "For the best Italian pizza dough with resting time, use these ingredients: 500g of '00' flour, 325ml of lukewarm water, 10g of salt, 7g of active dry yeast, and a pinch of sugar. Combine and knead the ingredients, then allow the dough to rest for at least 8 hours. The extended resting period enhances the dough's flavor and texture, creating an ideal base for traditional Italian pizza.",
+      "To create the best Italian pizza dough with the necessary resting time, you'll need these ingredients: 500g of '00' flour, 325ml of lukewarm water, 10g of salt, 7g of active dry yeast, and a pinch of sugar. Mix and knead the dough, then let it rest for a minimum of 8 hours. This extended resting period is crucial for achieving the authentic Italian pizza crust's flavor and texture.",
+      "Achieving the best Italian pizza dough with resting time involves using top-notch ingredients: 500g of '00' flour, 325ml of lukewarm water, 10g of salt, 7g of active dry yeast, and a pinch of sugar. Combine, knead, and allow the dough to rest for at least 8 hours. This extended resting time is essential for developing the dough's character, resulting in classic Italian-style pizza crusts."
+    ],
+    "keywords": [
+      "best Italian pizza dough",
+      "pizza dough",
+      "pizza dough recipe"
+    ]
+  },
+  {
+    "id": "38",
+    "question": "What are the best tomatoes to use for an Italian pizza?",
+    "answers": [
+      "The best tomatoes to use for an Italian pizza are San Marzano tomatoes. These tomatoes, grown in the volcanic soil of the Campania region in Italy, are known for their sweet, rich flavor and low acidity. They are often considered the gold standard for pizza sauce, providing an authentic and delicious taste.",
+      "For an Italian pizza, the top choice of tomatoes is San Marzano tomatoes. These tomatoes, cultivated in the volcanic soil of Campania, Italy, are renowned for their sweet and flavorful profile with minimal acidity. They are widely regarded as the best option for creating an authentic and delightful pizza sauce.",
+      "When it comes to crafting an Italian pizza, the best tomatoes to use are San Marzano tomatoes. These tomatoes, nurtured in the volcanic soils of Campania, Italy, offer a sweet and rich flavor with low acidity. They are the preferred choice for achieving an authentic and mouthwatering pizza sauce.",
+      "For the perfect Italian pizza, opt for San Marzano tomatoes. These tomatoes, grown in the volcanic soil of Campania, Italy, are celebrated for their sweet and robust flavor profile, coupled with a low acidity level. Using San Marzano tomatoes is key to creating an authentic and delectable pizza sauce."
+    ],
+    "keywords": [
+      "best tomatoes for Italian pizza",
+      "San Marzano tomatoes",
+      "tomatoes",
+      "pizza sauce",
+      "authentic Italian pizza",
+      "pizza tomato choice"
+    ]
+  },
+  {
+    "id": "39",
+    "question": "What is the best pizza oven for home use?",
+    "answers": [
+      "The best pizza oven for home use, including options like Ooni, can vary based on your preferences. Ooni pizza ovens, known for their portability and efficiency, are excellent choices for making wood-fired pizzas in your backyard. Other top contenders include the Roccbox pizza oven, which offers versatility with both gas and wood fuel options, and the Uuni 3, a compact and affordable wood-fired pizza oven. The best choice depends on your specific needs, budget, and the type of pizza experience you desire.",
+      "When searching for the best pizza oven for home use, including options like Ooni, you have several great choices. Ooni pizza ovens are favored for their convenience and ability to produce wood-fired pizzas at home. The Roccbox pizza oven is another standout, providing versatility with both gas and wood fuel capabilities. Additionally, the Uuni 3 is a compact and cost-effective wood-fired pizza oven. Your selection should align with your preferences, budget, and desired pizza-making experience.",
+      "Finding the best pizza oven for home use, which includes options like Ooni, depends on your specific requirements. Ooni pizza ovens are popular for their portability and efficiency in making wood-fired pizzas. The Roccbox pizza oven offers versatility with both gas and wood fuel options, while the Uuni 3 is a compact and budget-friendly wood-fired oven. Your choice should match your needs, budget, and the kind of pizza you want to create in your own space.",
+      "The best pizza oven for home use, which includes choices like Ooni, can vary depending on your unique preferences. Ooni pizza ovens are well-regarded for their ease of use and ability to create wood-fired pizzas at home. The Roccbox pizza oven stands out with its dual fuel options, accommodating both gas and wood. Alternatively, the Uuni 3 is a compact and cost-effective wood-fired pizza oven. Your decision should align with your personal requirements, budget, and pizza-making aspirations."
+    ],
+    "keywords": [
+      "best pizza oven for home use",
+      "Ooni pizza oven",
+      "Roccbox pizza oven",
+      "Uuni 3 pizza oven",
+      "wood-fired pizza at home"
+    ]
+  },
+  {
+    "id": "40",
+    "question": "How much does a pizza cost around the world?",
+    "answers": [
+      "The cost of a pizza varies significantly around the world. In the United States, a typical large pizza can range from $8 to $16. In Italy, the birthplace of pizza, you can find delicious Margherita pizzas for as low as €5. In Japan, a medium-sized pizza can cost around 2,000 yen. Prices can vary further based on toppings, location, and local economic factors. It's always best to check with local pizzerias for specific prices in different regions.",
+      "Pizza prices around the world differ greatly. In the United States, a large pizza may cost between $8 and $16. In Italy, where pizza originated, you can enjoy a Margherita pizza for as little as €5. In Japan, a medium-sized pizza might be around 2,000 yen. Keep in mind that prices can fluctuate based on toppings, location, and local economic conditions. For precise pricing in various regions, it's advisable to consult local pizzerias.",
+      "The cost of a pizza can vary widely depending on where you are in the world. In the United States, a standard large pizza may range from $8 to $16. In Italy, the birthplace of pizza, you can savor a Margherita pizza for as low as €5. In Japan, the price for a medium-sized pizza can be around 2,000 yen. It's important to note that toppings, location, and local economic factors can influence pizza prices. To get accurate pricing in different areas, it's recommended to inquire at local pizzerias.",
+      "Pizza prices globally exhibit considerable diversity. In the United States, a large pizza may cost anywhere from $8 to $16. In Italy, the homeland of pizza, you can relish a Margherita pizza for as little as €5. In Japan, a medium-sized pizza might be priced around 2,000 yen. Pizza costs are influenced by factors like toppings, geographical location, and local economic conditions. For precise pricing in various regions, it's advisable to contact local pizza establishments."
+    ],
+    "keywords": [
+      "pizza cost",
+      "pizza prices around the world",
+      "global pizza pricing",
+      "pizza expenses",
+      "international pizza cost",
+      "how much pizza cost"
+    ]
+  },
+  {
+    "id": "41",
+    "question": "What is the best wine pairing for a pizza?",
+    "answers": [
+      "The best wine pairing for a pizza often depends on the type of pizza you're enjoying. For classic Margherita or Margherita-style pizzas with their simplicity and fresh tomato flavors, a light and crisp white wine like Pinot Grigio or a red wine like Chianti can be excellent choices. If you're savoring a meat-lover's pizza with bold flavors, consider a red wine such as Cabernet Sauvignon. Ultimately, the best pairing is one that complements your personal taste preferences.",
+      "Choosing the best wine pairing for a pizza is influenced by the pizza's type and flavors. For Margherita or Margherita-style pizzas with their fresh tomato simplicity, a light and crisp white wine like Pinot Grigio or a red wine like Chianti can be delightful. If you prefer meaty pizzas with robust flavors, a red wine like Cabernet Sauvignon is a great match. Ultimately, the ideal pairing depends on your individual taste preferences.",
+      "The best wine pairing for a pizza varies based on the pizza's style. For classic Margherita or Margherita-style pizzas with their fresh tomato notes, consider a light and crisp white wine like Pinot Grigio or a red wine like Chianti. If you're indulging in a meat-heavy pizza, opt for a red wine such as Cabernet Sauvignon. The perfect pairing is ultimately a matter of your personal taste.",
+      "When it comes to finding the best wine pairing for a pizza, it's important to consider the pizza's type and flavors. For Margherita or Margherita-style pizzas with their fresh tomato simplicity, a light and crisp white wine like Pinot Grigio or a red wine like Chianti can be delightful. If you're enjoying a meat-centric pizza, a red wine such as Cabernet Sauvignon is a great choice. Ultimately, the best wine pairing is one that suits your unique taste preferences."
+    ],
+    "keywords": [
+      "best wine pairing for pizza",
+      "pizza and wine",
+      "wine selection for pizza",
+      "pizza and wine pairing",
+      "perfect wine for pizza"
+    ]
+  },
+  {
+    "id": "42",
+    "question": "What is the best beer pairing for pizza?",
+    "answers": [
+      "The best beer pairing for pizza can vary depending on the type of pizza you're enjoying. For classic Margherita or Margherita-style pizzas with their fresh and simple flavors, a light and crisp lager or pilsner can be a great choice. If you're indulging in a meat-lover's pizza with bold and savory toppings, consider a malty and robust amber ale or a hoppy IPA. Ultimately, the ideal pairing is one that complements your personal taste preferences.",
+      "Choosing the best beer pairing for pizza is influenced by the pizza's style and flavors. For Margherita or Margherita-style pizzas with their fresh and simple taste, a light and crisp lager or pilsner is a good option. If you're enjoying a meaty pizza with rich flavors, a malty and robust amber ale or a hoppy IPA can be excellent choices. The perfect pairing ultimately depends on your individual taste preferences.",
+      "The best beer pairing for pizza depends on the pizza's style. For classic Margherita or Margherita-style pizzas with their fresh and simple flavors, opt for a light and crisp lager or pilsner. If you're savoring a meat-centric pizza, consider a malty and robust amber ale or a hoppy IPA. The ideal pairing is a matter of personal taste and the pizza's toppings.",
+      "When it comes to finding the best beer pairing for pizza, consider the pizza's type and flavors. For Margherita or Margherita-style pizzas with their fresh and simple taste, a light and crisp lager or pilsner works well. If you're enjoying a pizza loaded with savory toppings, a malty and robust amber ale or a hoppy IPA can be a great match. The perfect beer pairing is one that suits your unique taste."
+    ],
+    "keywords": [
+      "best beer pairing for pizza",
+      "pizza and beer",
+      "beer selection for pizza",
+      "pizza and beer pairing",
+      "perfect beer for pizza"
+    ]
+  },
+  {
+    "id": "43",
+    "question": "How many degrees should a pizza be baked at?",
+    "answers": [
+      "A pizza is typically baked in an oven preheated to a temperature of 475 degrees Fahrenheit (245 degrees Celsius) or higher. The high temperature helps create a crispy and golden crust while melting the cheese and cooking the toppings to perfection.",
+      "The ideal baking temperature for a pizza is around 475 degrees Fahrenheit (245 degrees Celsius) or hotter. This high heat ensures that the pizza crust becomes crispy, the cheese melts beautifully, and the toppings cook to perfection.",
+      "When baking a pizza, it's recommended to use an oven temperature of 475 degrees Fahrenheit (245 degrees Celsius) or higher. This high heat results in a perfectly crispy crust, gooey melted cheese, and well-cooked toppings, providing the best pizza experience.",
+      "For the perfect pizza, bake it at a temperature of approximately 475 degrees Fahrenheit (245 degrees Celsius) or even hotter. The high heat is essential for achieving a crispy crust, melting the cheese, and cooking the toppings to your liking."
+    ],
+    "keywords": [
+      "pizza baking temperature",
+      "oven temperature for pizza",
+      "baking pizza",
+      "pizza cooking temperature",
+      "pizza oven heat"
+    ]
+  },
+  {
+    "id": "44",
+    "question": "What are the different types of pizza around the world?",
+    "answers": [
+      "Pizza has evolved globally, resulting in a diverse range of styles. In Italy, you'll find traditional Neapolitan pizza like Margherita and Marinara. New York is famous for its thin-crust pizza with foldable slices. Chicago is renowned for deep-dish pizza. Detroit-style pizza has a square shape and crispy edges. In Japan, you can try Okonomiyaki pizza with unique toppings. Other countries also offer their own variations, making pizza a worldwide favorite.",
+      "Pizza's global popularity has led to various regional styles. In Italy, there's classic Neapolitan pizza like Margherita and Marinara. New York is known for its iconic thin-crust pizza, while Chicago boasts deep-dish pizza. Detroit-style pizza is square and crispy. Japan offers Okonomiyaki pizza with distinctive toppings. Around the world, each region has put its spin on this beloved dish, making it a global culinary phenomenon.",
+      "Pizza is a universally loved food with diverse styles worldwide. In Italy, you'll encounter traditional Neapolitan pizza such as Margherita and Marinara. New York is famous for its thin-crust pizza, while Chicago is renowned for deep-dish pizza. Detroit-style pizza is characterized by its square shape and crispy edges. In Japan, Okonomiyaki pizza offers unique toppings. These are just a few examples of the global pizza landscape, with each region adding its own twist to this beloved dish.",
+      "Around the world, pizza has taken on numerous regional variations. In Italy, you'll discover classic Neapolitan pizza like Margherita and Marinara. New York is celebrated for its thin-crust pizza, while Chicago is famous for its deep-dish style. Detroit-style pizza features a square shape and crispy edges. Japan offers Okonomiyaki pizza with creative toppings. These are just a few examples of the rich diversity of pizza styles found globally."
+    ],
+    "keywords": [
+      "different types of pizza",
+      "pizza styles around the world",
+      "global pizza variations",
+      "regional pizza styles",
+      "worldwide pizza types",
+      "pizza styles"
+    ]
   }
+  
 ]
