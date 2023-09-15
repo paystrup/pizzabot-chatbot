@@ -1,13 +1,14 @@
 import getRandomDefaultAnswer from "./getDefaultAnswer.js";
 import updateCharacterCount from "./charCount.js";
 import { chatInput, chatOutput, submitBtn } from "./_variables.js";
+import { messagesEndpoint } from "./_endpoints.js";
 
 // Function to get an answer from the JSON file
 async function getAnswer() {
   const userInput = chatInput.value.toLowerCase();
 
   try {
-    const response = await fetch("data/messages.json");
+    const response = await fetch(messagesEndpoint);
     const data = await response.json();
 
     for (const message of data) {

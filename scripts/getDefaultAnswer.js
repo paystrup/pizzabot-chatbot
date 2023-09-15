@@ -1,7 +1,9 @@
+import { defaultMessagesEndpoint } from "./_endpoints.js";
+
 // Get a random default answer from defaultAnswers.json
 export default async function getRandomDefaultAnswer() {
   try {
-    const response = await fetch("data/defaultAnswers.json");
+    const response = await fetch(defaultMessagesEndpoint);
     const defaultData = await response.json();
 
     if (Array.isArray(defaultData) && defaultData.length > 0) {
