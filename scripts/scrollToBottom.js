@@ -1,14 +1,14 @@
 // To ensure new chats are shown after POST
 // Scroll to the bottom of the chat UI ✅
-var inputField = document.getElementById("inputField");
+let inputField = document.getElementById("inputField");
 
 // Scroll to the body height -> bottom -> of the HTML document -> works for now
-function scrollToBottom() {
+export default function scrollToBottom() {
   window.scrollTo(0, document.body.scrollHeight);
+  inputField.focus();
 }
 
 // Call function on DOM reload -> after chatbot.php redirects through header
 document.addEventListener("DOMContentLoaded", function () {
   scrollToBottom();
-  inputField.focus();
 });

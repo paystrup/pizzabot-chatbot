@@ -1,4 +1,5 @@
 import { defaultMessagesEndpoint } from "./_endpoints.js";
+import { defaultErrorMsg } from "./_variables.js";
 
 // Get a random default answer from defaultAnswers.json
 export default async function getRandomDefaultAnswer() {
@@ -16,6 +17,6 @@ export default async function getRandomDefaultAnswer() {
     }
   } catch (error) {
     console.error("Error fetching default answers data:", error);
-    chatOutput.innerHTML += `<p><strong>Bot:</strong> Oops, something went wrong while fetching default answers.</p>`;
+    chatOutput.innerHTML += `<p><strong>Bot:</strong> ${defaultErrorMsg}</p>`;
   }
 }

@@ -1,6 +1,14 @@
 import getRandomDefaultAnswer from "./getDefaultAnswer.js";
+import appendChatMessage from "./appendChat.js";
+import scrollToBottom from "./scrollToBottom.js";
 import updateCharacterCount from "./charCount.js";
-import { chatInput, chatOutput, submitBtn } from "./_variables.js";
+import {
+  chatInput,
+  chatOutput,
+  submitBtn,
+  defaultErrorMsg,
+  botName,
+} from "./_variables.js";
 import { messagesEndpoint } from "./_endpoints.js";
 
 // Function to get an answer from the JSON file
@@ -24,7 +32,23 @@ async function getAnswer() {
         );
         const answerVariant = message.answers[randomAnswerIndex];
 
-        chatOutput.innerHTML += `<p><strong>Bot:</strong> ${answerVariant}</p>`;
+        // Append usermsg
+        appendChatMessage(
+          "You",
+          false,
+          new Date().toLocaleTimeString(),
+          userInput,
+          chatOutput
+        );
+
+        // Apend botmsg
+        appendChatMessage(
+          botName,
+          true,
+          new Date().toLocaleTimeString(),
+          answerVariant,
+          chatOutput
+        );
         return; // Return the random answer variant
       }
     }
@@ -33,7 +57,15 @@ async function getAnswer() {
     await getRandomDefaultAnswer();
   } catch (error) {
     console.error("Error fetching data:", error);
-    chatOutput.innerHTML += `<p><strong>Bot:</strong> Oops, something went wrong while fetching data.</p>`;
+    appendChatMessage(
+      botName,
+      true,
+      new Date().toLocaleTimeString(),
+      defaultErrorMsg,
+      chatOutput
+    );
+  } finally {
+    scrollToBottom();
   }
 }
 
