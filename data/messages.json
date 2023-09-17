@@ -77,7 +77,8 @@
       "caviar",
       "lobster",
       "mozzarella cheese",
-      "sea-salt"
+      "sea-salt",
+      "most expensive pizza"
     ]
   },
   {
@@ -184,12 +185,13 @@
     ],
     "keywords": [
       "deep-dish pizza",
-      "deep dish",
+      "deep dish pizza",
       "Chicago",
       "Pizzeria Uno",
       "1943",
       "thick crust",
-      "pan-like structure"
+      "pan-like structure",
+      "what is a deep-dish pizza"
     ]
   },
   {
@@ -234,7 +236,7 @@
   },
   {
     "id": "13",
-    "question": "What is the most used cheese on a pizza, and what are its main varieties?",
+    "question": "What is the most used cheese on a pizza?",
     "answers": [
       "The most used cheese on a pizza is Mozzarella cheese, which has four main varieties used in pizza making. These varieties include di bufala, made from Italian water buffalo milk and commonly featured in Neapolitan-style pizzas; fior di latte, a similar variety made from cow milk; burrata, a fresh Italian cheese with a creamy filling; and pizza cheese, which is most commonly used in American pizzerias. Pizza cheese can be a whole-milk or part-skim type and is known for its extended shelf life.",
       "Mozzarella cheese is the most commonly used cheese on a pizza, and it comes in four main varieties for pizza making. These varieties are di bufala, crafted from Italian water buffalo milk and often found in Neapolitan-style pizzas; fior di latte, a similar variety made from cow milk; burrata, a fresh Italian cheese with a creamy center; and pizza cheese, the type predominantly used in American pizzerias. Pizza cheese is available in both whole-milk and part-skim variations, known for its durability and longer shelf life.",
@@ -251,7 +253,8 @@
       "burrata",
       "pizza cheese",
       "American pizzerias",
-      "shelf life"
+      "shelf life",
+      "most popular cheese on pizza"
     ]
   },
   {
@@ -280,11 +283,7 @@
       "A calzone is an Italian dish consisting of a folded pizza-like pastry filled with various ingredients such as cheese, ham, or vegetables. It is baked until it becomes golden and crispy.",
       "Calzone is a traditional Italian dish that resembles a folded pizza. It's made by filling pizza dough with ingredients like cheese, vegetables, and meat, then baking it until it's crisp and golden."
     ],
-    "keywords": [
-      "calzone",
-      "folded pizza",
-      "pizza dough"
-    ]
+    "keywords": ["calzone", "folded pizza", "pizza dough"]
   },
   {
     "id": "16",
@@ -802,5 +801,4 @@
       "pizza styles"
     ]
   }
-  
 ]

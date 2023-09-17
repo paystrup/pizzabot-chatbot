@@ -263,7 +263,6 @@
 
           <!-- ALL MESSAGES -->
           <div class="chatHistory_messages">
-            <div id="chatOutput"></div>
           </div>
         </section>
       </section>
