@@ -37,7 +37,7 @@
       "Pizza is the ultimate comfort food. It all starts with a flat, circular piece of dough, which serves as the canvas for a masterpiece. Tomato sauce, cheese, and a variety of toppings are added before it's baked to perfection. The result? Pure deliciousness!",
       "When you think of pizza, envision a thin, round piece of dough transformed into a masterpiece. Tomato sauce, cheese, and an assortment of toppings are added, and then it's baked until it's irresistibly crispy and bursting with flavor."
     ],
-    "keywords": ["pizza", "definition", "what is", "what's pizza", "🍕"]
+    "keywords": ["definition", "what is pizza", "what's pizza", "🍕"]
   },
   {
     "id": "3",
@@ -50,12 +50,13 @@
       "The cradle of pizza is Naples, Italy, where the beloved Neapolitan pizza was first crafted. Known for its simplicity, this pizza variety boasts top-notch ingredients like San Marzano tomatoes, creamy mozzarella cheese, aromatic fresh basil, and premium olive oil."
     ],
     "keywords": [
-      "pizza",
       "origin",
       "Naples",
       "Italy",
       "come from",
-      "first pizza"
+      "first",
+      "roots",
+      "original"
     ]
   },
   {
@@ -69,16 +70,12 @@
       "Luis XIII in Salerno, Italy, is home to the most expensive pizza globally, costing an astonishing $12,000! But this isn't just any pizza; it's a true masterpiece. The dough is aged to perfection, and a talented chef will come to your home to create it. The ingredients are a luxurious indulgence, featuring three types of caviar, Norwegian lobster, Cilento, bufala mozzarella cheese, and pink Australian sea-salt from the Murray River."
     ],
     "keywords": [
-      "pizza",
-      "expensive pizza",
+      "expensive",
       "Luis XIII",
       "Salerno",
-      "Italy",
       "caviar",
       "lobster",
-      "mozzarella cheese",
-      "sea-salt",
-      "most expensive pizza"
+      "most expensive"
     ]
   },
   {
@@ -91,14 +88,7 @@
       "If you're curious about the largest pizza ever made, it was a monumental creation in Rome, Italy, on December 13, 2012. The team behind this culinary marvel included Dovilio Nardi, Andrea Mannocchi, Marco Nardi, Matteo Nardi, and Matteo Giannotte. Their pizza had an astonishing total surface area of 13,580.28 square feet, a feat that was officially recognized by Guinness World Records!",
       "A historic moment in the world of pizza occurred in Rome, Italy, on December 13, 2012. A dedicated team led by Dovilio Nardi, Andrea Mannocchi, Marco Nardi, Matteo Nardi, and Matteo Giannotte created the largest pizza ever recorded. This colossal pie covered an incredible surface area of 13,580.28 square feet and was documented by Guinness World Records!"
     ],
-    "keywords": [
-      "biggest pizza",
-      "largest pizza",
-      "recorded history",
-      "Rome",
-      "Italy",
-      "Guinness World Records"
-    ]
+    "keywords": ["biggest", "largest", "Guinness World Records"]
   },
   {
     "id": "6",
@@ -111,12 +101,14 @@
       "In a space odyssey like no other, the year 2001 saw the Russian Space Agency accepting a substantial payment of over a million dollars to deliver a modest six-inch pizza to the International Space Station. Russian cosmonaut Yuri Usachov made history as the first person to enjoy a pizza in the weightlessness of space!"
     ],
     "keywords": [
-      "pizza delivery",
+      "space delivery",
       "International Space Station",
+      "ISS",
       "Russian Space Agency",
       "Yuri Usachov",
       "space",
-      "pizza in space"
+      "in space",
+      "longest delivery"
     ]
   },
   {
@@ -130,10 +122,11 @@
       "Italian pizzas initially had a square shape, which is now referred to as the 'Sicilian cut.' Originally, Romano cheese was used as the topping before it was replaced by Mozzarella cheese."
     ],
     "keywords": [
-      "Italian pizzas",
       "original shape",
       "Sicilian cut",
-      "pizza cut"
+      "pizza cut",
+      "cuts",
+      "square"
     ]
   },
   {
@@ -167,10 +160,10 @@
     ],
     "keywords": [
       "Italian law",
-      "traditional pizza",
       "permitted ingredients",
       "processing methods",
-      "frozen pizzas"
+      "frozen pizzas",
+      "law"
     ]
   },
   {
@@ -226,7 +219,8 @@
       "The scientific consensus is that Mozzarella is the ideal cheese topping for pizza. In 2014, food scientists conducted a study examining the baking qualities of various cheeses, and Mozzarella was the standout choice."
     ],
     "keywords": [
-      "ideal pizza cheese",
+      "ideal cheese",
+      "best cheese",
       "Mozzarella",
       "food scientists",
       "scientific evidence",
@@ -245,16 +239,13 @@
       "Mozzarella cheese is the go-to choice for pizza, and it offers four main varieties suitable for pizza preparation. These varieties include di bufala, produced from Italian water buffalo milk and frequently found in Neapolitan-style pizzas; fior di latte, a similar variety created from cow milk; burrata, a fresh Italian cheese with a creamy interior; and pizza cheese, the variety predominantly used in American pizzerias. Pizza cheese is available in both whole-milk and part-skim options, known for its long shelf life."
     ],
     "keywords": [
-      "most used cheese on pizza",
-      "Mozzarella cheese",
-      "pizza cheese varieties",
+      "most used cheese",
+      "cheese varieties",
       "di bufala",
       "fior di latte",
       "burrata",
-      "pizza cheese",
-      "American pizzerias",
-      "shelf life",
-      "most popular cheese on pizza"
+      "cheese",
+      "most popular cheese"
     ]
   },
   {
@@ -267,12 +258,10 @@
     ],
     "keywords": [
       "Hawaiian pizza",
-      "origin",
-      "Canada",
       "Sam Panopoulos",
       "Satellite Restaurant",
       "Chatham, Ontario",
-      "Hawaii Pizza"
+      "Hawaii"
     ]
   },
   {
@@ -283,7 +272,7 @@
       "A calzone is an Italian dish consisting of a folded pizza-like pastry filled with various ingredients such as cheese, ham, or vegetables. It is baked until it becomes golden and crispy.",
       "Calzone is a traditional Italian dish that resembles a folded pizza. It's made by filling pizza dough with ingredients like cheese, vegetables, and meat, then baking it until it's crisp and golden."
     ],
-    "keywords": ["calzone", "folded pizza", "pizza dough"]
+    "keywords": ["calzone", "folded pizza"]
   },
   {
     "id": "16",
@@ -298,8 +287,7 @@
       "why brick oven",
       "high temperatures",
       "heat distribution",
-      "crispy crust",
-      "flavorful"
+      "crispy crust"
     ]
   },
   {
@@ -311,7 +299,6 @@
       "Pepperoni pizza is a product of American culinary innovation and is said to have its origins in the United States. Its iconic flavor comes from the spicy pepperoni sausage, making it a beloved choice in American pizzerias."
     ],
     "keywords": [
-      "pepperoni pizza",
       "pepperoni",
       "pepperoni sausage",
       "pepperoni origin",
@@ -327,14 +314,12 @@
       "For an exceptional pizza experience, consider cooking it in a wood-fired brick oven. These ovens are designed to reach scorching temperatures of over 800°F (427°C), making them perfect for achieving a perfectly crisp and blistered crust. To cook a pizza in a wood-fired brick oven, start by building a wood fire and allow it to burn until the oven's interior reaches the desired temperature. Once the oven is sufficiently hot, slide the pizza onto a pizza peel dusted with flour, then gently place it on the oven's floor. The intense heat will cook the pizza in just a few minutes, creating a delightful combination of charred edges and bubbling cheese. Retrieve the pizza with the peel, let it cool momentarily, and savor the extraordinary flavors of this wood-fired masterpiece."
     ],
     "keywords": [
-      "cook a pizza",
+      "cook",
       "optimal way",
-      "brick oven",
-      "wood-fired oven",
-      "high temperatures",
-      "crispy crust",
-      "charred crust",
-      "authentic pizza"
+      "best way to cook",
+      "how to cook",
+      "best way to cook",
+      "how to bake"
     ]
   },
   {
@@ -345,7 +330,7 @@
       "The art of cooking the perfect Italian pizza sauce lies in simplicity and the use of the finest ingredients. Begin with high-quality canned whole San Marzano tomatoes. Hand-crush them to maintain their texture and remove any seeds. In a saucepan, warm extra-virgin olive oil over medium heat, and add finely minced garlic. Sauté until the garlic becomes fragrant but not browned. Then, introduce the crushed tomatoes, a pinch of salt, a touch of sugar to balance acidity, and fresh basil leaves. Let the sauce gently simmer for 20-30 minutes, occasionally stirring. The goal is to harmonize the flavors without overcooking, resulting in a luxurious, sweet, and aromatic tomato sauce, perfect for crafting authentic Italian-style pizzas."
     ],
     "keywords": [
-      "pizza sauce",
+      "sauce",
       "tomato sauce",
       "italian sauce",
       "San Marzano tomatoes"
@@ -360,15 +345,7 @@
       "The traditional toppings of Italian pizza are a testament to regional diversity. In Naples, where pizza was born, the classic 'Pizza Margherita' reigns supreme, featuring San Marzano tomato sauce, fresh mozzarella cheese, fresh basil leaves, and a drizzle of extra-virgin olive oil, creating a tricolor masterpiece. Rome's 'Pizza Romana' takes a different path with toppings like thinly sliced prosciutto, arugula, and shaved Parmesan cheese. Meanwhile, Sicily's 'Sfincione' stands out with its thick crust and unique toppings, including tomato sauce, onions, anchovies, and breadcrumbs. Italy's pizza landscape is a celebration of local ingredients and traditions, offering a wide range of delightful toppings.",
       "Exploring the traditional toppings of Italian pizza reveals a rich tapestry of flavors. In Naples, the heart of pizza culture, the iconic 'Pizza Margherita' takes center stage with its essential ingredients: San Marzano tomato sauce, fresh mozzarella cheese, fresh basil leaves, and a drizzle of extra-virgin olive oil, capturing the colors of the Italian flag. In Rome, 'Pizza Romana' prefers a more worldly approach with toppings like thinly sliced prosciutto, arugula, and shaved Parmesan cheese. Sicily's 'Sfincione' introduces a different dimension with its thick crust and distinctive toppings, including tomato sauce, onions, anchovies, and breadcrumbs. Across Italy, regional pizza specialties are a testament to local culinary traditions."
     ],
-    "keywords": [
-      "traditional toppings",
-      "geographical location",
-      "Neapolitan pizza",
-      "Pizza Margherita",
-      "Pizza Romana",
-      "Sfincione",
-      "regional specialties"
-    ]
+    "keywords": ["traditional toppings", "toppings"]
   },
   {
     "id": "21",
@@ -381,10 +358,10 @@
       "Traditional pizza offers a delightful array of flavors with the 10 most popular variants being:\n\n1. Margherita: A Neapolitan classic featuring tomato sauce, mozzarella, fresh basil, and olive oil.\n2. Pepperoni: The iconic American choice topped with spicy pepperoni and mozzarella.\n3. Hawaiian: A sweet and savory creation combining ham, pineapple, and mozzarella.\n4. Margherita Extra: Elevate your Margherita experience with extra mozzarella and basil.\n5. Quattro Formaggi: A cheese lover's dream adorned with four distinct cheese varieties.\n6. Funghi: For mushroom enthusiasts, this pizza features sautéed mushrooms, mozzarella, and hints of garlic.\n7. Diavola: Embrace the heat with hot chili peppers, spicy salami, and mozzarella.\n8. Capricciosa: Embark on a flavor-packed journey with artichokes, olives, ham, mushrooms, and mozzarella.\n9. Marinara: Simplicity at its finest with tomato sauce, garlic, oregano, and olive oil.\n10. Frutti di Mare: Savor the ocean's bounty with a medley of fresh seafood on a tomato sauce base. These traditional pizza variants cater to a wide range of tastes."
     ],
     "keywords": [
-      "popular pizza variants",
+      "popular variants",
       "traditional pizza",
-      "most popular pizza",
-      "what is the most popular pizza"
+      "most popular",
+      "what is the most popular"
     ]
   },
   {
@@ -398,14 +375,11 @@
       "Quattro Formaggi pizza, which means 'Four Cheeses' in Italian, is a cheese aficionado's dream. It features a medley of four cheeses as its toppings, typically mozzarella, Gorgonzola, Parmesan, and a soft cheese like ricotta or cream cheese. The result is a sumptuously creamy and cheese-infused pizza."
     ],
     "keywords": [
-      "Quattro Formaggi pizza",
+      "Quattro Formaggi",
       "four cheeses",
-      "cheese enthusiasts",
-      "mozzarella",
-      "Gorgonzola",
-      "Parmesan",
-      "ricotta",
-      "cream cheese"
+      "cheese pizza",
+      "four cheese",
+      "4 cheese"
     ]
   },
   {
@@ -418,15 +392,7 @@
       "Funghi pizza is a savory option designed for those who adore mushrooms. This pizza typically includes a tomato sauce base, mozzarella cheese, sautéed mushrooms, and sometimes a hint of garlic for added depth of flavor. The earthy and umami-rich taste of the mushrooms pairs beautifully with the melty cheese, creating a truly satisfying pizza.",
       "Funghi pizza, which means 'Mushroom pizza' in Italian, is a must-try for mushroom enthusiasts. It typically features a tomato sauce base, mozzarella cheese, sautéed mushrooms, and occasionally a touch of garlic for extra flavor. The combination of earthy mushrooms and creamy cheese results in a delicious and aromatic pizza."
     ],
-    "keywords": [
-      "Funghi pizza",
-      "mushroom lovers",
-      "tomato sauce",
-      "mozzarella cheese",
-      "sautéed mushrooms",
-      "garlic",
-      "umami-rich"
-    ]
+    "keywords": ["Funghi pizza", "mushroom pizza", "mushrooms", "mushroom"]
   },
   {
     "id": "24",
@@ -440,7 +406,7 @@
     ],
     "keywords": [
       "Diavola pizza",
-      "spicy pizza",
+      "spicy",
       "hot chili peppers",
       "spicy salami",
       "diavola",
@@ -457,13 +423,7 @@
       "Capricciosa pizza is a loaded and diverse pizza variety. It typically includes a tomato sauce base, mozzarella cheese, ham, artichoke hearts, black olives, mushrooms, and occasionally hard-boiled eggs. This combination results in a hearty and flavorful pizza with various tastes and textures.",
       "Capricciosa pizza, which translates to 'Capricious pizza' in Italian, is an indulgent and flavorful pizza variant. Its ingredients often comprise a tomato sauce base, mozzarella cheese, ham, artichoke hearts, black olives, mushrooms, and sometimes hard-boiled eggs. This medley of toppings offers a satisfying and diverse pizza experience."
     ],
-    "keywords": [
-      "Capricciosa pizza",
-      "loaded pizza",
-      "what is a capricciosa pizza",
-      "capriciosa",
-      "capricaosa"
-    ]
+    "keywords": ["Capricciosa", "loaded", "capriciosa", "capricaosa"]
   },
   {
     "id": "26",
@@ -475,12 +435,7 @@
       "Marinara pizza is a classic Italian favorite known for its simplicity. It features a basic combination of tomato sauce, garlic, oregano, and olive oil as its toppings. Notably, it is cheeseless, emphasizing the purity of these fundamental ingredients. Marinara pizza showcases the charm of straightforward Italian gastronomy.",
       "Marinara pizza, a timeless classic in Italian culinary tradition, is celebrated for its simplicity. It consists of a basic combination of tomato sauce, garlic, oregano, and olive oil as its toppings. Importantly, it is devoid of cheese, allowing the essential flavors to shine. Marinara pizza exemplifies the art of uncomplicated Italian cooking."
     ],
-    "keywords": [
-      "Marinara pizza",
-      "minimalist pizza",
-      "simple pizza",
-      "pizza with no cheese"
-    ]
+    "keywords": ["Marinara", "minimalist", "simple", "only sauce"]
   },
   {
     "id": "27",
@@ -493,13 +448,13 @@
       "Frutti di Mare pizza, translating to 'Fruits of the Sea' in Italian, is a pizza variant crafted for seafood connoisseurs. It typically includes a tomato sauce base and a range of fresh seafood toppings, which may encompass shrimp, mussels, clams, calamari, and sometimes octopus. The combination of the tomato sauce and the brininess of the seafood offers a unique and flavorful pizza experience."
     ],
     "keywords": [
-      "Frutti di Mare pizza",
-      "seafood pizza",
-      "shrimp pizza",
-      "mussels pizza",
-      "clam pizza",
-      "calamari pizza",
-      "octopus pizza",
+      "Frutti di Mare",
+      "seafood",
+      "shrimp",
+      "mussels",
+      "clam",
+      "calamari",
+      "octopus",
       "Fruits of the Sea",
       "frutti de mare"
     ]
@@ -514,13 +469,7 @@
       "The Margherita pizza is widely recognized as one of the most popular and revered pizzas worldwide. This timeless classic features a minimalist yet exquisite blend of tomato sauce, fresh mozzarella cheese, basil leaves, and a drizzle of olive oil. Its origin can be traced to Naples, Italy, where it was first prepared in tribute to Queen Margherita of Savoy during the late 19th century. The choice of ingredients, symbolizing the colors of the Italian flag, carries historical significance and delivers a delightful taste that continues to captivate pizza enthusiasts around the globe.",
       "When it comes to the world's most popular pizza, the Margherita pizza stands out as an iconic choice. This classic pizza boasts a simple yet delectable combination of tomato sauce, fresh mozzarella cheese, basil leaves, and a drizzle of olive oil. Its roots trace back to Naples, Italy, where it was initially crafted in honor of Queen Margherita of Savoy. The use of basil, mozzarella, and tomato sauce, representing the colors of the Italian flag, adds historical significance and a timeless flavor that has earned the Margherita pizza a special place in the hearts of pizza lovers everywhere."
     ],
-    "keywords": [
-      "most popular pizza",
-      "Margherita pizza",
-      "iconic pizza",
-      "Italian flag colors",
-      "pizza history"
-    ]
+    "keywords": ["most popular", "Margherita", "iconic", "Italian flag colors"]
   },
   {
     "id": "29",
@@ -729,7 +678,8 @@
       "global pizza pricing",
       "pizza expenses",
       "international pizza cost",
-      "how much pizza cost"
+      "how much pizza cost",
+      "how much does a pizza cost"
     ]
   },
   {
@@ -758,13 +708,7 @@
       "The best beer pairing for pizza depends on the pizza's style. For classic Margherita or Margherita-style pizzas with their fresh and simple flavors, opt for a light and crisp lager or pilsner. If you're savoring a meat-centric pizza, consider a malty and robust amber ale or a hoppy IPA. The ideal pairing is a matter of personal taste and the pizza's toppings.",
       "When it comes to finding the best beer pairing for pizza, consider the pizza's type and flavors. For Margherita or Margherita-style pizzas with their fresh and simple taste, a light and crisp lager or pilsner works well. If you're enjoying a pizza loaded with savory toppings, a malty and robust amber ale or a hoppy IPA can be a great match. The perfect beer pairing is one that suits your unique taste."
     ],
-    "keywords": [
-      "best beer pairing for pizza",
-      "pizza and beer",
-      "beer selection for pizza",
-      "pizza and beer pairing",
-      "perfect beer for pizza"
-    ]
+    "keywords": ["beer", "beer selection", "beer pairing", "perfect beer"]
   },
   {
     "id": "43",
@@ -776,11 +720,11 @@
       "For the perfect pizza, bake it at a temperature of approximately 475 degrees Fahrenheit (245 degrees Celsius) or even hotter. The high heat is essential for achieving a crispy crust, melting the cheese, and cooking the toppings to your liking."
     ],
     "keywords": [
-      "pizza baking temperature",
-      "oven temperature for pizza",
-      "baking pizza",
-      "pizza cooking temperature",
-      "pizza oven heat"
+      "baking temperature",
+      "oven temperature",
+      "baking",
+      "cooking temperature",
+      "oven heat"
     ]
   },
   {
@@ -793,12 +737,12 @@
       "Around the world, pizza has taken on numerous regional variations. In Italy, you'll discover classic Neapolitan pizza like Margherita and Marinara. New York is celebrated for its thin-crust pizza, while Chicago is famous for its deep-dish style. Detroit-style pizza features a square shape and crispy edges. Japan offers Okonomiyaki pizza with creative toppings. These are just a few examples of the rich diversity of pizza styles found globally."
     ],
     "keywords": [
-      "different types of pizza",
-      "pizza styles around the world",
-      "global pizza variations",
-      "regional pizza styles",
-      "worldwide pizza types",
-      "pizza styles"
+      "different types",
+      "styles around the world",
+      "variations",
+      "regional styles",
+      "worldwide types",
+      "styles"
     ]
   }
 ]

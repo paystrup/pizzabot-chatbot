@@ -11,6 +11,48 @@ import {
 } from "./_variables.js";
 import { messagesEndpoint } from "./_endpoints.js";
 
+// Function to calculate Levenshtein distance between two strings
+function calculateLevenshteinDistance(a, b) {
+  const dp = Array.from(Array(a.length + 1), (_, i) =>
+    Array(b.length + 1).fill(0)
+  );
+
+  for (let i = 1; i <= a.length; i++) {
+    for (let j = 1; j <= b.length; j++) {
+      const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+      dp[i][j] = Math.min(
+        dp[i - 1][j] + 1,
+        dp[i][j - 1] + 1,
+        dp[i - 1][j - 1] + cost
+      );
+    }
+  }
+
+  return dp[a.length][b.length];
+}
+
+// Function to calculate weighted similarity score
+function calculateSimilarityScore(question, keywords, userInput) {
+  // Calculate Levenshtein distance between question and user input
+  const questionDistance = calculateLevenshteinDistance(
+    question.toLowerCase(),
+    userInput
+  );
+
+  // Calculate Levenshtein distance between keywords and user input
+  const keywordDistances = keywords.map((keyword) =>
+    calculateLevenshteinDistance(keyword.toLowerCase(), userInput)
+  );
+  const keywordDistance = Math.min(...keywordDistances);
+
+  // Calculate a weighted score based on question and keyword distances
+  const score =
+    0.7 * (1 - questionDistance / Math.max(question.length, userInput.length)) +
+    0.3 * (1 - keywordDistance / userInput.length);
+
+  return score;
+}
+
 // Function to get an answer from the JSON file
 async function getAnswer() {
   const userInput = chatInput.value.toLowerCase();
@@ -19,42 +61,49 @@ async function getAnswer() {
     const response = await fetch(messagesEndpoint);
     const data = await response.json();
 
+    let bestMatch = { score: 0, answer: null };
+
     for (const message of data) {
-      if (
-        message.question.toLowerCase().includes(userInput) ||
-        message.keywords.some((keyword) =>
-          keyword.toLowerCase().includes(userInput)
-        )
-      ) {
-        // Get a random answer variant
-        const randomAnswerIndex = Math.floor(
-          Math.random() * message.answers.length
-        );
-        const answerVariant = message.answers[randomAnswerIndex];
+      const score = calculateSimilarityScore(
+        message.question,
+        message.keywords,
+        userInput
+      );
 
-        // Append usermsg
-        appendChatMessage(
-          "You",
-          false,
-          new Date().toLocaleTimeString(),
-          userInput,
-          chatOutput
-        );
-
-        // Apend botmsg
-        appendChatMessage(
-          botName,
-          true,
-          new Date().toLocaleTimeString(),
-          answerVariant,
-          chatOutput
-        );
-        return; // Return the random answer variant
+      if (score > bestMatch.score) {
+        bestMatch.score = score;
+        bestMatch.answer = message.answers;
       }
     }
 
-    // IF no answer is found, return a random default answer
-    await getRandomDefaultAnswer();
+    if (bestMatch.answer) {
+      // Get a random answer variant
+      const randomAnswerIndex = Math.floor(
+        Math.random() * bestMatch.answer.length
+      );
+      const answerVariant = bestMatch.answer[randomAnswerIndex];
+
+      // Append usermsg
+      appendChatMessage(
+        "You",
+        false,
+        new Date().toLocaleTimeString(),
+        userInput,
+        chatOutput
+      );
+
+      // Append botmsg
+      appendChatMessage(
+        botName,
+        true,
+        new Date().toLocaleTimeString(),
+        answerVariant,
+        chatOutput
+      );
+    } else {
+      // IF no answer is found, return a random default answer
+      await getRandomDefaultAnswer();
+    }
   } catch (error) {
     console.error("Error fetching data:", error);
     appendChatMessage(
