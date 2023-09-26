@@ -35,8 +35,8 @@
 
           <!-- SIDEBAR ACTIONS -->
           <div class="sideBar_actions">
-            <form action="deleteChats.php" method="POST">
-              <button tabindex="3" class="sideBar_actions_newChatBtn greenBtnOutline fadeIn2">
+            <form id="newChatForm" action="">
+              <button id="newChatBtn" tabindex="3" class="sideBar_actions_newChatBtn greenBtnOutline fadeIn2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -309,5 +309,6 @@
 
     <script type="module" src="scripts/charCount.js"></script>
     <script type="module" src="scripts/getAnswer.js"></script>
+    <script type="module" src="scripts/resetChat.js"></script>
   </body>
 </html>

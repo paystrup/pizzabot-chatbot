@@ -77,13 +77,10 @@ function resetInputField() {
 function validateChatInput(e) {
   e.preventDefault();
   const inputValue = chatInput.value.trim(); // Get the input value and remove leading/trailing whitespace
-  const regex = /[^\w\s]/gi; // Regex to match any character that is not a word character or whitespace
+  const regex = /\S/; // Regex to match non-whitespace characters
 
-  // Sanitize the input value by removing any unwanted characters
-  const sanitizedInput = inputValue.replace(regex, '');
-
-  if (sanitizedInput.length > 0) {
-    postData(sanitizedInput);
+  if (regex.test(inputValue)) {
+    postData(inputValue);
     getMessages();
     resetInputField();
   } else {
