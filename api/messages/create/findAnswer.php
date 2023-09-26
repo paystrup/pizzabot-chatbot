@@ -1,14 +1,14 @@
 <?php 
     function findAnswer($query) {
         // Load the JSON array of messages from the static file
-        $jsonFilePath = __DIR__ . '../../data/messages.json'; 
+        $jsonFilePath = __DIR__ . '/../../../data/messages.json'; 
         $messages = json_decode(file_get_contents($jsonFilePath), true);
 
         // Initialize a default response array
         $defaultResponse = [];
 
         // Load the JSON array of default answers from the file
-        $defaultAnswersFilePath = __DIR__ . '../../../../data/defaultAnswers.json';
+        $defaultAnswersFilePath = __DIR__ . '/../../../data/defaultAnswers.json';
         $defaultAnswers = json_decode(file_get_contents($defaultAnswersFilePath), true);
 
         // Loop through each message in the messages array
