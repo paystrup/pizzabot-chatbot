@@ -1,4 +1,3 @@
-import getRandomDefaultAnswer from "./getDefaultAnswer.js";
 import appendChatMessage from "./appendChat.js";
 import scrollToBottom from "./scrollToBottom.js";
 import updateCharacterCount from "./charCount.js";
@@ -6,68 +5,66 @@ import {
   chatInput,
   chatOutput,
   submitBtn,
-  defaultErrorMsg,
   botName,
+  userName
 } from "./_variables.js";
-import { messagesEndpoint } from "./_endpoints.js";
+import { messagesCreateEndpoint, getChatHistory } from "./_endpoints.js";
 
-// Function to get an answer from the JSON file
-async function getAnswer() {
-  const userInput = chatInput.value.toLowerCase();
-
+async function postData(question) {
   try {
-    const response = await fetch(messagesEndpoint);
-    const data = await response.json();
+    const data = { question }; // Create a data object with the question
+    const response = await fetch(messagesCreateEndpoint, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json' 
+      },
+      body: JSON.stringify(data) // Serialize the data object as JSON
+    });
 
-    for (const message of data) {
-      if (
-        message.question.toLowerCase().includes(userInput) ||
-        message.keywords.some((keyword) =>
-          keyword.toLowerCase().includes(userInput)
-        )
-      ) {
-        // Get a random answer variant
-        const randomAnswerIndex = Math.floor(
-          Math.random() * message.answers.length
-        );
-        const answerVariant = message.answers[randomAnswerIndex];
-
-        // Append usermsg
-        appendChatMessage(
-          "You",
-          false,
-          new Date().toLocaleTimeString(),
-          userInput,
-          chatOutput
-        );
-
-        // Apend botmsg
-        appendChatMessage(
-          botName,
-          true,
-          new Date().toLocaleTimeString(),
-          answerVariant,
-          chatOutput
-        );
-        return; // Return the random answer variant
-      }
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
     }
 
-    // IF no answer is found, return a random default answer
-    await getRandomDefaultAnswer();
+    const responseData = await response.json();
+    console.log(responseData);
   } catch (error) {
-    console.error("Error fetching data:", error);
-    appendChatMessage(
-      botName,
-      true,
-      new Date().toLocaleTimeString(),
-      defaultErrorMsg,
-      chatOutput
-    );
-  } finally {
-    scrollToBottom();
+    console.error('Error:', error);
   }
 }
+
+// Function to get chat history from PHP endpoint
+async function getMessages() {
+  try {
+    const response = await fetch(getChatHistory, {
+      method: "GET",
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+
+    const chatHistory = await response.json();
+    console.log(chatHistory)
+
+    // Loop through the chat history and append messages using the appendChatMessage function
+    chatHistory.forEach(({ message, user, timestamp }) => {
+      const isBot = user === 'server'; // Check if the user is the server (bot)
+      const chatName = isBot ? botName : userName; // Check the user, set the chat name
+      appendChatMessage(chatName, isBot, timestamp, message, chatOutput);
+    });
+
+    scrollToBottom();
+
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
+
+// Call function on DOM reload to show chat history
+getMessages();
 
 // Function to reset the input field value and refocus it
 function resetInputField() {
@@ -83,7 +80,8 @@ function validateChatInput(e) {
   const regex = /\S/; // Regex to match non-whitespace characters
 
   if (regex.test(inputValue)) {
-    getAnswer();
+    postData(inputValue);
+    getMessages();
     resetInputField();
   } else {
     // Display an error message or take other appropriate action
