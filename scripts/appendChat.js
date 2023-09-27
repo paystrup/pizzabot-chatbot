@@ -7,7 +7,7 @@ function appendChatMessage(
 ) {
   // Define the chat classes for the user and bot
   const chatClasses = isBot ? "chat" : "chat chat_user";
-  
+
   // Define the image source for the user and bot
   const imgSrcUser = "assets/images/profile_placeholder.jpg";
   const imgSrcBot = "assets/images/robotIcon.png";

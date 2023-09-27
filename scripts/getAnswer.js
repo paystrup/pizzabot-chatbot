@@ -63,7 +63,7 @@ async function getMessages() {
     }
 
     const chatHistory = await response.json();
-    console.log(chatHistory);
+    updateChatBanner(chatHistory); // Render empty state or first query to chat banner
 
     // Loop through the chat history and append messages using the appendChatMessage function
     chatHistory.forEach(({ message, user, timestamp }) => {
@@ -72,7 +72,6 @@ async function getMessages() {
       appendChatMessage(chatName, isBot, timestamp, message, chatOutput);
     });
 
-    updateChatBanner(chatHistory); // Render empty state or first query to chat banner
     scrollToBottom(); // Scroll to bottom
   } catch (error) {
     console.error("Error:", error);
