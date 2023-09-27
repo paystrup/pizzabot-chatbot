@@ -8,8 +8,11 @@ import {
   botName,
   userName,
   maxCharCount,
+  defaultErrorMsg,
+  charCount,
 } from "./_variables.js";
 import { messagesCreateEndpoint, getChatHistory } from "./_endpoints.js";
+import appendErrorChatMessage from "./appendErrorChat.js";
 
 async function postData(question) {
   try {
@@ -24,12 +27,18 @@ async function postData(question) {
 
     if (!response.ok) {
       throw new Error("Network response was not ok");
+      appendErrorChatMessage(
+        "Network response was not ok. Please try again",
+        chatOutput,
+        "warning"
+      );
     }
 
     const responseData = await response.json();
     console.log(responseData);
   } catch (error) {
     console.error("Error:", error);
+    appendErrorChatMessage(defaultErrorMsg, chatOutput, "warning");
   }
 }
 
@@ -45,6 +54,11 @@ async function getMessages() {
 
     if (!response.ok) {
       throw new Error("Network response was not ok");
+      appendErrorChatMessage(
+        "Network response was not ok. Please try again",
+        chatOutput,
+        "warning"
+      );
     }
 
     const chatHistory = await response.json();
@@ -60,6 +74,7 @@ async function getMessages() {
     scrollToBottom();
   } catch (error) {
     console.error("Error:", error);
+    appendErrorChatMessage(defaultErrorMsg, chatOutput, "warning");
   }
 }
 
@@ -76,18 +91,19 @@ function resetInputField() {
 // Function to validate input and prevent default submission behavior
 function validateChatInput(e) {
   e.preventDefault();
-  const rawInputValue = chatInput.value; // Get the raw input value to check max character count
-  const inputValue = chatInput.value.trim(); // Get the input value and remove leading/trailing whitespace
+  const rawInputValue = chatInput.value; // Get the raw input value
+  const inputValue = chatInput.value.trim(); // remove leading/trailing whitespace
   const regex = /\S/; // Regex to match non-whitespace characters
 
-  // < operator is used instead of <=, because error state is shown at 500 characters, allowing = 500char would be confusing
-  if (regex.test(inputValue) && rawInputValue.length < maxCharCount) {
+  if (regex.test(inputValue) && rawInputValue.length <= maxCharCount) {
     postData(inputValue);
     getMessages();
     resetInputField();
   } else {
-    // Display an error message or take other appropriate action
+    // Display an error msg if the input is empty or too long
     console.log("Input field cannot be empty");
+    charCount.style.color = "red";
+    charCount.textContent = "Input field cannot be empty";
   }
 }
 

@@ -28,6 +28,7 @@
   --primarySansWideMedium: "Mona-Sans Medium Wide", sans-serif;
   --primarySansWideBold: "Mona-Sans Bold Wide", sans-serif;
   --primarySansRegular: "Mona-Sans Regular", sans-serif;
+  --errorState-warning: #ff8585;
   --borderRadiusBtn: 5px;
   --smallIconSize: 15px;
   --mediumIconSize: 20px;
@@ -338,6 +339,10 @@ button {
   max-width: 85%;
 }
 
+.chat_bubble p {
+  word-break: break-word;
+}
+
 .chat.chatSkeleton .chat_bubble {
   background-color: var(--primaryLightGrey);
   color: var(--primaryLightBlack);
@@ -346,6 +351,10 @@ button {
 .chat.chat_user .chat_bubble {
   background-color: var(--primaryLighterGrey);
   color: var(--primaryLightBlack);
+}
+
+.chat.chat_warning .chat_bubble {
+  background-color: var(--errorState-warning);
 }
 
 /* ---------- MSG USER INPUT ---------- */
