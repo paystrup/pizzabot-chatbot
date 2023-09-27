@@ -273,7 +273,7 @@ button {
 }
 
 .chat {
-  padding: 2rem 300px 2rem 600px;
+  padding: 2rem 300px 1rem 600px;
   display: flex;
   gap: 1rem;
 }
@@ -281,6 +281,12 @@ button {
 .chat.chat_user {
   justify-content: end;
   flex-direction: row-reverse;
+}
+
+.chat.chat_user .chat_msg {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .chat_img {
@@ -329,7 +335,7 @@ button {
   border-radius: 10px;
   font-family: var(--primarySansRegular);
   line-height: 160%;
-  min-width: 100px;
+  max-width: 85%;
 }
 
 .chat.chatSkeleton .chat_bubble {
@@ -410,4 +416,36 @@ button {
     rgba(255, 255, 255, 1) 50%,
     rgba(255, 255, 255, 0) 100%
   );
+}
+
+/* ---------- SCROLL BTN ---------- */
+.scrollBtn {
+  display: none;
+  margin-left: auto;
+  border-radius: 100%;
+  background-color: var(--primaryLighterGrey);
+  color: var(--primaryBlack);
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  z-index: 99999;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.scrollBtn.rotated {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.scrollBtn svg {
+  margin-top: 3px;
+  width: 20px;
+  height: 20px;
+}
+
+.scrollBtn.rotated svg {
+  margin-top: 6px;
 }
