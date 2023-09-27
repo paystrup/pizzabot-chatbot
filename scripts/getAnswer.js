@@ -6,7 +6,8 @@ import {
   chatOutput,
   submitBtn,
   botName,
-  userName
+  userName,
+  maxCharCount,
 } from "./_variables.js";
 import { messagesCreateEndpoint, getChatHistory } from "./_endpoints.js";
 
@@ -14,21 +15,21 @@ async function postData(question) {
   try {
     const data = { question }; // Create a data object with the question
     const response = await fetch(messagesCreateEndpoint, {
-      method: 'POST',
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json' 
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify(data) // Serialize the data object as JSON
+      body: JSON.stringify(data), // Serialize the data object as JSON
     });
 
     if (!response.ok) {
-      throw new Error('Network response was not ok');
+      throw new Error("Network response was not ok");
     }
 
     const responseData = await response.json();
     console.log(responseData);
   } catch (error) {
-    console.error('Error:', error);
+    console.error("Error:", error);
   }
 }
 
@@ -38,28 +39,27 @@ async function getMessages() {
     const response = await fetch(getChatHistory, {
       method: "GET",
       headers: {
-        'Content-Type': 'application/json'
-      }
-    })
+        "Content-Type": "application/json",
+      },
+    });
 
     if (!response.ok) {
-      throw new Error('Network response was not ok');
+      throw new Error("Network response was not ok");
     }
 
     const chatHistory = await response.json();
-    console.log(chatHistory)
+    console.log(chatHistory);
 
     // Loop through the chat history and append messages using the appendChatMessage function
     chatHistory.forEach(({ message, user, timestamp }) => {
-      const isBot = user === 'server'; // Check if the user is the server (bot)
+      const isBot = user === "server"; // Check if the user is the server (bot)
       const chatName = isBot ? botName : userName; // Check the user, set the chat name
       appendChatMessage(chatName, isBot, timestamp, message, chatOutput);
     });
 
     scrollToBottom();
-
   } catch (error) {
-    console.error('Error:', error);
+    console.error("Error:", error);
   }
 }
 
@@ -76,10 +76,12 @@ function resetInputField() {
 // Function to validate input and prevent default submission behavior
 function validateChatInput(e) {
   e.preventDefault();
+  const rawInputValue = chatInput.value; // Get the raw input value to check max character count
   const inputValue = chatInput.value.trim(); // Get the input value and remove leading/trailing whitespace
   const regex = /\S/; // Regex to match non-whitespace characters
 
-  if (regex.test(inputValue)) {
+  // < operator is used instead of <=, because error state is shown at 500 characters, allowing = 500char would be confusing
+  if (regex.test(inputValue) && rawInputValue.length < maxCharCount) {
     postData(inputValue);
     getMessages();
     resetInputField();
