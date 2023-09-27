@@ -93,6 +93,10 @@ function resetInputField() {
 // Function to validate input and prevent default submission behavior
 function validateChatInput(e) {
   e.preventDefault();
+
+  // Remove the "shake" class if it was previously added
+  chatInput.classList.remove("shake");
+
   const rawInputValue = chatInput.value; // Get the raw input value
   const inputValue = chatInput.value.trim(); // remove leading/trailing whitespace
   const regex = /\S/; // Regex to match non-whitespace characters
@@ -106,6 +110,18 @@ function validateChatInput(e) {
     console.log("Input field cannot be empty");
     charCount.style.color = "red";
     charCount.textContent = "Input field cannot be empty";
+
+    // Add the "shake" class to indicate the error
+    chatInput.classList.add("shake");
+
+    // Listen for the end of the "shake" animation and remove the class
+    chatInput.addEventListener(
+      "animationend",
+      () => {
+        inputField.classList.remove("shake");
+      },
+      { once: true }
+    ); // { once: true } ensures the event listener is removed after the animation ends
   }
 }
 

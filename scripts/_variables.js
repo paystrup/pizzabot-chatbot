@@ -15,3 +15,4 @@ export const chatHistoryBanner = document.querySelector("#chatHistory_banner");
 export const chatHistoryBannerBox = document.querySelector(
   ".chatHistory_heading"
 );
+export const bottomInput = document.querySelector(".clientInput");
