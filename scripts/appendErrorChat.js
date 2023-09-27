@@ -1,10 +1,14 @@
 import { botName } from "./_variables.js";
 
-function appendErrorChatMessage(message, containerSelector, errorState) {
+export default function appendErrorChatMessage(
+  message,
+  containerSelector,
+  errorState
+) {
   // Define the chat classes -> add errorState
   let chatClasses = `chat chat_${errorState ? `${errorState}` : ""}`;
 
-  // Add timestamp to a let variable
+  // Add timestamp (we don't have any API data here, so we use the client time)
   const timestamp = new Date().toLocaleTimeString();
 
   // Define the image source for the error msg -> bot
@@ -30,5 +34,3 @@ function appendErrorChatMessage(message, containerSelector, errorState) {
   // Append the chat message HTML to the specified chat container
   containerSelector.innerHTML += chatHTML;
 }
-
-export default appendErrorChatMessage;

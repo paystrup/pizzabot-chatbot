@@ -120,7 +120,7 @@ function validateChatInput(e) {
         inputField.classList.remove("shake");
       },
       { once: true }
-    ); // { once: true } ensures the event listener is removed after the animation ends
+    ); // ensures the event listener is removed after the animation ends
   }
 }
 

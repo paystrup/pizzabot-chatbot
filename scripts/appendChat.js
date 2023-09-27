@@ -1,4 +1,4 @@
-function appendChatMessage(
+export default function appendChatMessage(
   userName,
   isBot,
   timestamp,
@@ -33,5 +33,3 @@ function appendChatMessage(
   // Append the chat message HTML to the specified chat container
   containerSelector.innerHTML += chatHTML;
 }
-
-export default appendChatMessage;

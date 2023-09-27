@@ -30,16 +30,18 @@ export default function updateChatBanner(array) {
 
       `;
 
-      chatOutput.appendChild(emptyStateBanner);
+      chatOutput.appendChild(emptyStateBanner); // append to chat output / UI
     }
 
     chatHistoryBanner.textContent = emptyStateMsg_HistoryBanner;
   } else {
     // Remove the empty state element if it exists
+    // Because if the array / chatHistory array has elements, we don't want to show an empty state
     if (emptyStateBanner) {
       chatOutput.removeChild(emptyStateBanner);
     }
 
+    // Add the users first question sent to the API as the banner text, ChatGPT style
     chatHistoryBanner.textContent = "Question: " + array[0].message;
     chatHistoryBannerBox.classList.add("full");
   }
