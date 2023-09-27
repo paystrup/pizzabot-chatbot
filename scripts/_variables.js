@@ -10,3 +10,8 @@ export const defaultErrorMsg =
   "Oops, something went wrong. Please try again and send me another message.";
 export const scrollBtn = document.querySelector("#scrollBtn");
 export const maxCharCount = 500;
+export const emptyStateMsg_HistoryBanner = "Start asking me a question";
+export const chatHistoryBanner = document.querySelector("#chatHistory_banner");
+export const chatHistoryBannerBox = document.querySelector(
+  ".chatHistory_heading"
+);

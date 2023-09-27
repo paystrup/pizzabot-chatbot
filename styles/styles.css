@@ -266,7 +266,13 @@ button {
   justify-content: center;
   align-items: center;
   padding: 1rem 300px 1rem 600px;
+  background-color: var(--primaryLightBlack);
+  color: var(--primaryWhite);
+}
+
+.chatHistory_heading.full {
   background-color: var(--primaryGreen);
+  color: var(--primaryBlack);
 }
 
 #chatOutput {

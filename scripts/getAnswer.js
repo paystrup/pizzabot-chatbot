@@ -13,6 +13,7 @@ import {
 } from "./_variables.js";
 import { messagesCreateEndpoint, getChatHistory } from "./_endpoints.js";
 import appendErrorChatMessage from "./appendErrorChat.js";
+import updateChatBanner from "./updateChatBanner.js";
 
 async function postData(question) {
   try {
@@ -71,7 +72,8 @@ async function getMessages() {
       appendChatMessage(chatName, isBot, timestamp, message, chatOutput);
     });
 
-    scrollToBottom();
+    updateChatBanner(chatHistory); // Render empty state or first query to chat banner
+    scrollToBottom(); // Scroll to bottom
   } catch (error) {
     console.error("Error:", error);
     appendErrorChatMessage(defaultErrorMsg, chatOutput, "warning");
