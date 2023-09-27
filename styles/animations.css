@@ -1,20 +1,75 @@
 /* 🪄 All general animation classes are collected here 🪄 */
-.fadeIn:hover {
-    opacity: 0.3;
-    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-  
-.fadeIn2:hover {
-    opacity: 0.7;
-    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+@keyframes loading {
+  50% {
+    opacity: 30%;
+  }
 }
 
-@keyframes loading {
-    50% {
-      opacity: 30%;
-    }
+@keyframes horizontal-shaking {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes hoverUpDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.fadeIn:hover {
+  opacity: 0.3;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.fadeIn2:hover {
+  opacity: 0.7;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .skeletonLoad {
-    animation: loading 1.5s linear infinite;
+  animation: loading 1.5s linear infinite;
+}
+
+.shake {
+  animation: horizontal-shaking 0.2s linear;
+  overflow: hidden;
+}
+
+.fadeInUp {
+  animation: fadeInUp 0.5s;
+}
+
+.hoverUpDown {
+  animation: hoverUpDown 1s ease-in-out infinite;
 }

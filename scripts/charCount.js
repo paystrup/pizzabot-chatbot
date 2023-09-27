@@ -1,22 +1,22 @@
-import { charCount, inputField } from "./_variables.js";
+import { charCount, inputField, maxCharCount } from "./_variables.js";
 
-let errorMsg = "Too many characters!";
-let maxCount = 500;
+let errorMsg = "Max. character count reached!";
 let emptyMsgColor = "#d4d4d4"; // hardcoded, should be imported from design tokens in the future:))))
 
 // set maxcount on input field
-inputField.maxLength = maxCount;
+inputField.maxLength = maxCharCount;
 
 export default function updateCharacterCount() {
   // Reset color
   charCount.style.color = "";
 
   var characterCount = inputField.value.length;
-  charCount.textContent = characterCount + "/" + maxCount;
+  charCount.textContent = characterCount + "/" + maxCharCount;
 
-  if (characterCount >= maxCount) {
+  if (characterCount >= maxCharCount) {
     charCount.style.color = "red";
-    charCount.textContent = characterCount + "/" + maxCount + " " + errorMsg;
+    charCount.textContent =
+      characterCount + "/" + maxCharCount + " - " + errorMsg;
   }
 
   if (characterCount == 0) {

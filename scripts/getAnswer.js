@@ -8,8 +8,12 @@ import {
   botName,
   userName,
   maxCharCount,
+  defaultErrorMsg,
+  charCount,
 } from "./_variables.js";
 import { messagesCreateEndpoint, getChatHistory } from "./_endpoints.js";
+import appendErrorChatMessage from "./appendErrorChat.js";
+import updateChatBanner from "./updateChatBanner.js";
 
 async function postData(question) {
   try {
@@ -24,12 +28,18 @@ async function postData(question) {
 
     if (!response.ok) {
       throw new Error("Network response was not ok");
+      appendErrorChatMessage(
+        "Network response was not ok. Please try again",
+        chatOutput,
+        "warning"
+      );
     }
 
     const responseData = await response.json();
     console.log(responseData);
   } catch (error) {
     console.error("Error:", error);
+    appendErrorChatMessage(defaultErrorMsg, chatOutput, "warning");
   }
 }
 
@@ -45,10 +55,15 @@ async function getMessages() {
 
     if (!response.ok) {
       throw new Error("Network response was not ok");
+      appendErrorChatMessage(
+        "Network response was not ok. Please try again",
+        chatOutput,
+        "warning"
+      );
     }
 
     const chatHistory = await response.json();
-    console.log(chatHistory);
+    updateChatBanner(chatHistory); // Render empty state or first query to chat banner
 
     // Loop through the chat history and append messages using the appendChatMessage function
     chatHistory.forEach(({ message, user, timestamp }) => {
@@ -57,9 +72,10 @@ async function getMessages() {
       appendChatMessage(chatName, isBot, timestamp, message, chatOutput);
     });
 
-    scrollToBottom();
+    scrollToBottom(); // Scroll to bottom
   } catch (error) {
     console.error("Error:", error);
+    appendErrorChatMessage(defaultErrorMsg, chatOutput, "warning");
   }
 }
 
@@ -76,18 +92,35 @@ function resetInputField() {
 // Function to validate input and prevent default submission behavior
 function validateChatInput(e) {
   e.preventDefault();
-  const rawInputValue = chatInput.value; // Get the raw input value to check max character count
-  const inputValue = chatInput.value.trim(); // Get the input value and remove leading/trailing whitespace
+
+  // Remove the "shake" class if it was previously added
+  chatInput.classList.remove("shake");
+
+  const rawInputValue = chatInput.value; // Get the raw input value
+  const inputValue = chatInput.value.trim(); // remove leading/trailing whitespace
   const regex = /\S/; // Regex to match non-whitespace characters
 
-  // < operator is used instead of <=, because error state is shown at 500 characters, allowing = 500char would be confusing
-  if (regex.test(inputValue) && rawInputValue.length < maxCharCount) {
+  if (regex.test(inputValue) && rawInputValue.length <= maxCharCount) {
     postData(inputValue);
     getMessages();
     resetInputField();
   } else {
-    // Display an error message or take other appropriate action
+    // Display an error msg if the input is empty or too long
     console.log("Input field cannot be empty");
+    charCount.style.color = "red";
+    charCount.textContent = "Input field cannot be empty";
+
+    // Add the "shake" class to indicate the error
+    chatInput.classList.add("shake");
+
+    // Listen for the end of the "shake" animation and remove the class
+    chatInput.addEventListener(
+      "animationend",
+      () => {
+        inputField.classList.remove("shake");
+      },
+      { once: true }
+    ); // { once: true } ensures the event listener is removed after the animation ends
   }
 }
 

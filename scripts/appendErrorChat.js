@@ -1,17 +1,14 @@
-function appendChatMessage(
-  userName,
-  isBot,
-  timestamp,
-  message,
-  containerSelector
-) {
-  // Define the chat classes for the user and bot
-  const chatClasses = isBot ? "chat" : "chat chat_user";
+import { botName } from "./_variables.js";
 
-  // Define the image source for the user and bot
-  const imgSrcUser = "assets/images/profile_placeholder.jpg";
-  const imgSrcBot = "assets/images/robotIcon.png";
-  const imgSrc = isBot ? imgSrcBot : imgSrcUser;
+function appendErrorChatMessage(message, containerSelector, errorState) {
+  // Define the chat classes -> add errorState
+  let chatClasses = `chat chat_${errorState ? `${errorState}` : ""}`;
+
+  // Add timestamp to a let variable
+  const timestamp = new Date().toLocaleTimeString();
+
+  // Define the image source for the error msg -> bot
+  const imgSrc = "assets/images/robotIcon.png";
 
   // Create the chat message HTML
   const chatHTML = `
@@ -21,7 +18,7 @@ function appendChatMessage(
         </div>
         <div class="chat_msg">
             <div class="chat_msgInfo">
-                <p class="chat_msgInfo_name">${userName}</p>
+                <p class="chat_msgInfo_name">${botName}</p>
                 <p class="chat_msgInfo_time">${timestamp}</p>
             </div>
             <div class="chat_bubble">
@@ -34,4 +31,4 @@ function appendChatMessage(
   containerSelector.innerHTML += chatHTML;
 }
 
-export default appendChatMessage;
+export default appendErrorChatMessage;

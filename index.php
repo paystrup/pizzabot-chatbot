@@ -258,7 +258,7 @@
 
           <!-- CHAT UI - HEADING / BANNER CONTAINING QUERY / QUESTION -->
           <div class="chatHistory_heading">
-              <p>Heading here</p>
+              <p class="truncate_short" id="chatHistory_banner">Heading here</p>
           </div>
 
           <!-- ALL MESSAGES -->

@@ -28,6 +28,7 @@
   --primarySansWideMedium: "Mona-Sans Medium Wide", sans-serif;
   --primarySansWideBold: "Mona-Sans Bold Wide", sans-serif;
   --primarySansRegular: "Mona-Sans Regular", sans-serif;
+  --errorState-warning: #ff8585;
   --borderRadiusBtn: 5px;
   --smallIconSize: 15px;
   --mediumIconSize: 20px;
@@ -265,11 +266,60 @@ button {
   justify-content: center;
   align-items: center;
   padding: 1rem 300px 1rem 600px;
+  background-color: var(--primaryLightBlack);
+  color: var(--primaryWhite);
+}
+
+.chatHistory_heading.full {
   background-color: var(--primaryGreen);
+  color: var(--primaryBlack);
 }
 
 #chatOutput {
   padding: 2rem 300px 2rem 600px;
+}
+
+.emptyStateBanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 10rem 300px 2rem 600px;
+}
+
+.emptyStateBanner_heading {
+  border: 3px solid var(--primaryBlack);
+  color: var(--primaryBlack);
+  padding: 2rem;
+  max-width: 50ch;
+  display: flex;
+  gap: 2rem;
+  border-radius: 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.emptyStateBanner_heading h3 {
+  text-transform: uppercase;
+  font-family: var(--primarySansWideMedium);
+  font-size: 2rem;
+}
+
+.emptyStateBanner p {
+  color: var(--primaryLightBlack);
+  font-size: 1.5rem;
+  max-width: 25ch;
+  text-align: center;
+}
+
+.emptyStateBanner svg {
+  height: 35px;
+  width: 35px;
+  color: var(--primaryBlack);
+  margin-top: 3rem;
 }
 
 .chat {
@@ -338,6 +388,10 @@ button {
   max-width: 85%;
 }
 
+.chat_bubble p {
+  word-break: break-word;
+}
+
 .chat.chatSkeleton .chat_bubble {
   background-color: var(--primaryLightGrey);
   color: var(--primaryLightBlack);
@@ -346,6 +400,10 @@ button {
 .chat.chat_user .chat_bubble {
   background-color: var(--primaryLighterGrey);
   color: var(--primaryLightBlack);
+}
+
+.chat.chat_warning .chat_bubble {
+  background-color: var(--errorState-warning);
 }
 
 /* ---------- MSG USER INPUT ---------- */
