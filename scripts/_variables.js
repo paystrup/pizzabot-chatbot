@@ -7,4 +7,5 @@ export const resetChatForm = document.querySelector("#newChatForm");
 export const botName = "pizzabot";
 export const userName = "You";
 export const defaultErrorMsg = "Oops, something went wrong. Please try again.";
+export const scrollBtn = document.querySelector("#scrollBtn");
 export const maxCharCount = 500;
