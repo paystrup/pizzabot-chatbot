@@ -315,6 +315,20 @@ button {
   text-align: center;
 }
 
+.emptyStateBanner a {
+  color: var(--primaryBlack);
+  font-family: var(--primarySansWideMedium);
+  font-size: 0.8rem;
+  text-decoration: underline;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.emptyStateBanner a:hover {
+  transition: 0.3s ease;
+  opacity: 0.3;
+}
+
 .emptyStateBanner svg {
   height: 35px;
   width: 35px;
